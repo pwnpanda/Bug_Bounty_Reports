@@ -33,8 +33,7 @@ Open for contributions from others as well, so please send a pull request if you
 23 | Insufficient security controls | CORS misconfiguration | $1000 | SEMrush | https://hackerone.com/reports/235200
 24 | Logic bug | Domain authority regex logic bug | $6000 | Google | https://bugs.xdavidhu.me/google/2020/03/08/the-unexpected-google-wide-domain-check-bypass/ 
 25 | Privilege escalation | Abusing backup and restore function to escalate privileges | $1500 | Ubiquiti Inc | https://hackerone.com/reports/329659
-26 | Privilege escalation | 
-Arbritrary file deletion + DLL Hijacking leads to privilege escalation during install | $667 | Ubiquiti Inc | https://hackerone.com/reports/530967
+26 | Privilege escalation | Arbritrary file deletion + DLL Hijacking leads to privilege escalation during install | $667 | Ubiquiti Inc | https://hackerone.com/reports/530967
 27 | Information leak | Unauthenticated API endpoint leaking holiday schedule of employees in China | $4000 | Starbucks | https://hackerone.com/reports/659248
 28 | Account takeover | Changing URL path from login to new-password allows merging victims store to attackers account | $7500 | Shopify | https://hackerone.com/reports/796956
 29 | Improper access control | Unauthenticated API allows enumeration of user names & phone numbers | $500 | Razer | https://hackerone.com/reports/752443
