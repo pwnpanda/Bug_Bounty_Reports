@@ -78,10 +78,7 @@ Open for contributions from others as well, so please send a pull request if you
 68 | DoS | Cache poisoning CORS allow origin header | $550 | Automattic | https://hackerone.com/reports/591302
 69 | IDOR | Remote wipe of other users device | $500 | Nextcloud | https://hackerone.com/reports/819807
 70 | SSRF | GitLab local instance SSRF bypass through DNS Rebinding in WebHooks | $3500 | GitLab | https://hackerone.com/reports/632101
-71 | 
-LFI
-
-openStream called on java.net.URL allows access to local resources when passing in file:// or jar:// | $1800 | GitHub Security Lab | https://hackerone.com/reports/844327
+71 | LFI | openStream called on java.net.URL allows access to local resources when passing in file:// or jar:// | $1800 | GitHub Security Lab | https://hackerone.com/reports/844327
 72 | Logic Bug | Not checking if LINUX privilege is successfully dropped leads to increased attack surface | $1800 | GitHub Security Lab | https://hackerone.com/reports/845729
 73 | SQLi | Arbitrary SQL queries via DocID parameter of Websocket API | $1800 | GitHub Security Lab | https://hackerone.com/reports/854439
 74 | Logic Bug | Account takeover through link injection in contact form | $1000 | Insolar | https://hackerone.com/reports/786741
@@ -114,10 +111,7 @@ openStream called on java.net.URL allows access to local resources when passing 
 101 | SSL Downgrade | Possible to temporarily downgrade a victim from HTTPS to HTTP in Firefox. Required victim clicking a link and had a very short timeframe to be successful | $500 | Uber | https://hackerone.com/reports/221955
 102 | XSS | Reflected XSS due to outdated Wordpress installation lead to exposure of sensitive form data and user data | $4000 | Uber | https://hackerone.com/reports/340431
 103 | Open Redirect | Open redirect in get parameter | $50 | Unikrn | https://hackerone.com/reports/625546
-104 | DoS | 
-Bypassing character limitation on ´Moments´ feature and creating many of them leads to DoS
-
-$560 | Twitter | https://hackerone.com/reports/819088
+104 | DoS | Bypassing character limitation on ´Moments´ feature and creating many of them leads to DoS | $560 | Twitter | https://hackerone.com/reports/819088
 105 | CRLF Injection | CRLF injection in urllib | $1000 | Python (IBB) | https://hackerone.com/reports/590020
 106 | Subdomain Takeover | Out of scope, no impact subdomain takeover of uptimerobot page | $100 | BTFS | https://hackerone.com/reports/824909
 107 | SQLi | Blind Boolean-based SQLi in Razer Gold TH | $1000 | Razer | https://hackerone.com/reports/790914
