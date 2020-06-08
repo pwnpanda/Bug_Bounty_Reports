@@ -7,7 +7,7 @@ Open for contributions from others as well, so please send a pull request if you
 # [LIST](https://github.com/Robiq/Bug_Bounty_Reports/blob/master/reports.md)
 
 # | Category | Description | Bounty | Program | URL
----|---------|-------------|---------|--------|--------------------
+--|----------|-------------|--------|---------|-----
 1 | IDOR | IDOR for order delivery address | $3000 | Mail.ru | https://hackerone.com/reports/723461
 2 | IDOR | IDOR to change API-key description | $250 | Visma | https://hackerone.com/reports/809967
 3 | SSRF | STUN SSRF | $3500 | Slack | https://hackerone.com/reports/333419
