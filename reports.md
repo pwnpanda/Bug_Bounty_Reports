@@ -1,11 +1,3 @@
-# Public Bug Bounty Reports
-
-### Since ~2020
-
-Open for contributions from others as well, so please send a pull request if you can!
-
-# [LIST](https://github.com/Robiq/Bug_Bounty_Reports/blob/master/reports.md)
-
 # | Category | Description | Bounty | Program | URL
 --------------------------------------------------------------
 1 | IDOR | IDOR for order delivery address | $3000 | Mail.ru | https://hackerone.com/reports/723461
