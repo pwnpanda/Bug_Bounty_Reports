@@ -4,6 +4,8 @@
 
 Open for contributions from others as well, so please send a pull request if you can!
 
+- TODO: Add HTML version
+
 # [LIST](https://github.com/Robiq/Bug_Bounty_Reports/blob/master/reports.md)
 
 \# | Category | Description | Bounty | Program | URL

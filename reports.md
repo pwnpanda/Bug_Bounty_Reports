@@ -1,5 +1,5 @@
-# | Category | Description | Bounty | Program | URL
---------------------------------------------------------------
+ategory | Description | Bounty | Program | URL
+-- | --- | --- | --- | --- | ---
 1 | IDOR | IDOR for order delivery address | $3000 | Mail.ru | https://hackerone.com/reports/723461
 2 | IDOR | IDOR to change API-key description | $250 | Visma | https://hackerone.com/reports/809967
 3 | SSRF | STUN SSRF | $3500 | Slack | https://hackerone.com/reports/333419
@@ -25,10 +25,7 @@
 23 | Insufficient security controls | CORS misconfiguration | $1000 | SEMrush | https://hackerone.com/reports/235200
 24 | Logic bug | Domain authority regex logic bug | $6000 | Google | https://bugs.xdavidhu.me/google/2020/03/08/the-unexpected-google-wide-domain-check-bypass/ 
 25 | Privilege escalation | Abusing backup and restore function to escalate privileges | $1500 | Ubiquiti Inc | https://hackerone.com/reports/329659
-26 | Privilege escalation | 
-Arbritrary file deletion + DLL Hijacking leads to privilege escalation during install
-
-$667 | Ubiquiti Inc | https://hackerone.com/reports/530967
+26 | Privilege escalation | Arbritrary file deletion + DLL Hijacking leads to privilege escalation during install | $667 | Ubiquiti Inc | https://hackerone.com/reports/530967
 27 | Information leak | Unauthenticated API endpoint leaking holiday schedule of employees in China | $4000 | Starbucks | https://hackerone.com/reports/659248
 28 | Account takeover | Changing URL path from login to new-password allows merging victims store to attackers account | $7500 | Shopify | https://hackerone.com/reports/796956
 29 | Improper access control | Unauthenticated API allows enumeration of user names & phone numbers | $500 | Razer | https://hackerone.com/reports/752443
@@ -73,10 +70,7 @@ $667 | Ubiquiti Inc | https://hackerone.com/reports/530967
 68 | DoS | Cache poisoning CORS allow origin header | $550 | Automattic | https://hackerone.com/reports/591302
 69 | IDOR | Remote wipe of other users device | $500 | Nextcloud | https://hackerone.com/reports/819807
 70 | SSRF | GitLab local instance SSRF bypass through DNS Rebinding in WebHooks | $3500 | GitLab | https://hackerone.com/reports/632101
-71 | 
-LFI
-
-openStream called on java.net.URL allows access to local resources when passing in file:// or jar:// | $1800 | GitHub Security Lab | https://hackerone.com/reports/844327
+71 | LFI | openStream called on java.net.URL allows access to local resources when passing in file:// or jar:// | $1800 | GitHub Security Lab | https://hackerone.com/reports/844327
 72 | Logic Bug | Not checking if LINUX privilege is successfully dropped leads to increased attack surface | $1800 | GitHub Security Lab | https://hackerone.com/reports/845729
 73 | SQLi | Arbitrary SQL queries via DocID parameter of Websocket API | $1800 | GitHub Security Lab | https://hackerone.com/reports/854439
 74 | Logic Bug | Account takeover through link injection in contact form | $1000 | Insolar | https://hackerone.com/reports/786741
@@ -109,10 +103,7 @@ openStream called on java.net.URL allows access to local resources when passing 
 101 | SSL Downgrade | Possible to temporarily downgrade a victim from HTTPS to HTTP in Firefox. Required victim clicking a link and had a very short timeframe to be successful | $500 | Uber | https://hackerone.com/reports/221955
 102 | XSS | Reflected XSS due to outdated Wordpress installation lead to exposure of sensitive form data and user data | $4000 | Uber | https://hackerone.com/reports/340431
 103 | Open Redirect | Open redirect in get parameter | $50 | Unikrn | https://hackerone.com/reports/625546
-104 | DoS | 
-Bypassing character limitation on ´Moments´ feature and creating many of them leads to DoS
-
-$560 | Twitter | https://hackerone.com/reports/819088
+104 | DoS | Bypassing character limitation on ´Moments´ feature and creating many of them leads to DoS | $560 | Twitter | https://hackerone.com/reports/819088
 105 | CRLF Injection | CRLF injection in urllib | $1000 | Python (IBB) | https://hackerone.com/reports/590020
 106 | Subdomain Takeover | Out of scope, no impact subdomain takeover of uptimerobot page | $100 | BTFS | https://hackerone.com/reports/824909
 107 | SQLi | Blind Boolean-based SQLi in Razer Gold TH | $1000 | Razer | https://hackerone.com/reports/790914
@@ -181,3 +172,4 @@ $560 | Twitter | https://hackerone.com/reports/819088
 170 | XSS | Reflected XSS through URI on 404 page | $300 | Mail.ru | https://hackerone.com/reports/797717
 171 | SSRF | SSRF through using functionality from included library that should be disabled | $10,000 | GitLab | https://hackerone.com/reports/826361
 172 | Information leak | Insufficient verification leads to ability to read sensitive files | $10,000 | GitLab | https://hackerone.com/reports/850447
+
