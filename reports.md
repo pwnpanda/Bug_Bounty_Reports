@@ -1,4 +1,4 @@
-ategory | Description | Bounty | Program | URL
+\# | Category | Description | Bounty | Program | URL
 -- | --- | --- | --- | --- | ---
 1 | IDOR | IDOR for order delivery address | $3000 | Mail.ru | https://hackerone.com/reports/723461
 2 | IDOR | IDOR to change API-key description | $250 | Visma | https://hackerone.com/reports/809967
