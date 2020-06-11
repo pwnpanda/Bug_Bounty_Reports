@@ -5,7 +5,8 @@
 Open for contributions from others as well, so please send a pull request if you can!
 
 
-# [LIST](https://github.com/Robiq/Bug_Bounty_Reports/blob/master/reports.md)
+# [Markdown](https://github.com/Robiq/Bug_Bounty_Reports/blob/master/reports.md)
+# [HTML](https://github.com/Robiq/Bug_Bounty_Reports/blob/master/reports.html)
 
 \# | Category | Description | Bounty | Program | URL
 -- | --- | --- | --- | --- | ---
