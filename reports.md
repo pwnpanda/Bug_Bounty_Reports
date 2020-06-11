@@ -172,4 +172,7 @@
 170 | XSS | Reflected XSS through URI on 404 page | $300 | Mail.ru | https://hackerone.com/reports/797717
 171 | SSRF | SSRF through using functionality from included library that should be disabled | $10,000 | GitLab | https://hackerone.com/reports/826361
 172 | Information leak | Insufficient verification leads to ability to read sensitive files | $10,000 | GitLab | https://hackerone.com/reports/850447
+173 | Improper Authentication | Could impersonate and answer tickets belonging to other users | $550 | InnoGames | https://hackerone.com/reports/876573
+174 | Subdomain Takeover | Subdomain takeover of iosota.razersynapse.com | $200 | Razer | https://hackerone.com/reports/813313
+175 | XSS | Reflected xss through cookies on ftp server for Thai employees | $375 | Razer | https://hackerone.com/reports/748217
 
