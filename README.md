@@ -4,11 +4,14 @@
 
 Open for contributions from others as well, so please send a pull request if you can!
 
-# Raw files
+# Content
+### raw
 -  [Markdown](https://github.com/Robiq/Bug_Bounty_Reports/blob/master/reports.md)
 -  [HTML](https://github.com/Robiq/Bug_Bounty_Reports/blob/master/reports.html)
 
-# Content
+### Rendered
+-  [Markdown](https://robiq.github.io/Bug_Bounty_Reports/reports.md)
+-  [HTML](https://robiq.github.io/Bug_Bounty_Reports/reports.html)
 
 \# | Category | Description | Bounty | Program | URL
 -- | --- | --- | --- | --- | ---
