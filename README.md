@@ -190,4 +190,8 @@ Open for contributions from others as well, so please send a pull request if you
 173 | Improper Authentication | Could impersonate and answer tickets belonging to other users | $550 | InnoGames | https://hackerone.com/reports/876573
 174 | Subdomain Takeover | Subdomain takeover of iosota.razersynapse.com | $200 | Razer | https://hackerone.com/reports/813313
 175 | XSS | Reflected xss through cookies on ftp server for Thai employees | $375 | Razer | https://hackerone.com/reports/748217
-
+176 | XSS | Out of scope DOM XSS leading to impact on account security for in scope asset. Only applicable to IE and Edge. | $750 | Rockstar Games | https://hackerone.com/reports/663312
+177 | SQLi | Search function was crashable disclosing error logs with useful information for other potential attacks. | $250 | Rockstar Games | https://hackerone.com/reports/808832
+178 | Open Redirect | Could potentially leak sensitive tokens through referer header on GTA Online sub-site.  | $750 | Rockstar Games | https://hackerone.com/reports/798121
+179 | XSS | DOM XSS in GTA Online feedback endpoint. Other issues with the same root cause was also found on the same site. | $1250 | Rockstar Games | https://hackerone.com/reports/803934
+180 | DoS | In email verification emails, the unique number is assigned sequentially, meaning you can invalidate all future registrations by visiting the following URL. Ex: confirmmail/1/jfaiu -> confirmmail/2/jfaiu | $150 | Vanilla | https://hackerone.com/reports/329209
