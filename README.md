@@ -195,3 +195,16 @@ Open for contributions from others as well, so please send a pull request if you
 178 | Open Redirect | Could potentially leak sensitive tokens through referer header on GTA Online sub-site.  | $750 | Rockstar Games | https://hackerone.com/reports/798121
 179 | XSS | DOM XSS in GTA Online feedback endpoint. Other issues with the same root cause was also found on the same site. | $1250 | Rockstar Games | https://hackerone.com/reports/803934
 180 | DoS | In email verification emails, the unique number is assigned sequentially, meaning you can invalidate all future registrations by visiting the following URL. Ex: confirmmail/1/jfaiu -> confirmmail/2/jfaiu | $150 | Vanilla | https://hackerone.com/reports/329209
+181 | Information leak | External images could be referenced in the screenshot utility feature, possibly leading to FaceBook OAUTH token theft | $500 | Rockstar Games | https://hackerone.com/reports/497655
+182 | XSS | Dom XSS on main page achieved through multiple minor issues, like path traversal and open redirect | $850 | Rockstar Games | https://hackerone.com/reports/475442
+183 | XSS | Stored XSS through demo function in multiple parameters using javascript scheme | $750 | Shopify | https://hackerone.com/reports/439912
+184 | Improper access control | After removing admin access from an account, it can still make changes with admin permissions until logged out. The account can also still make changes to embedded apps, but this is by design. | $1000 | Shopify | https://hackerone.com/reports/273099
+185 | CSRF | Account takeover on social club by using CSRF to link an account to the attackers facebook account, leading to the ability to login as the victim | $1000 | Rockstar Games | https://hackerone.com/reports/474833
+186 | XSS | Reflected XSS due to decoding and executing code after the last "/" on GTAOnline/jp.  | $750 | Rockstar Games | https://hackerone.com/reports/507494
+187 | Open Redirect | Open Redirect on the support page, impacting the mobile page | $750 | Rockstar games | https://hackerone.com/reports/781718
+188 | XSS | DOM XSS on GTAOnline. Regressed Directory Traversal and new XSS issue | $750 | Rockstar games | https://hackerone.com/reports/479612
+189 | Race Condition (TOCTOU) | Can click "This Rocks" (like) button any number of times, allowing an attacker to fill up the victims notification feed | $250 | Rockstar games | https://hackerone.com/reports/474021
+190 | XSS | DOM XSS in the video section of GTAOnline page through returnurl-parameter, only exploitable on non-English versions.  | $750 | Rockstar games | https://hackerone.com/reports/505157
+191 | CSRF | CSRF on login page only, due to processing credentials before checking for CSRF protections. This is also only valid when forcing non 4xx responses from the server | $500 | HackerOne | https://hackerone.com/reports/834366
+
+
