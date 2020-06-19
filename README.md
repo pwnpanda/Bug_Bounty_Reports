@@ -206,5 +206,16 @@ Open for contributions from others as well, so please send a pull request if you
 189 | Race Condition (TOCTOU) | Can click "This Rocks" (like) button any number of times, allowing an attacker to fill up the victims notification feed | $250 | Rockstar games | https://hackerone.com/reports/474021
 190 | XSS | DOM XSS in the video section of GTAOnline page through returnurl-parameter, only exploitable on non-English versions.  | $750 | Rockstar games | https://hackerone.com/reports/505157
 191 | CSRF | CSRF on login page only, due to processing credentials before checking for CSRF protections. This is also only valid when forcing non 4xx responses from the server | $500 | HackerOne | https://hackerone.com/reports/834366
-
+192 | RCE | RCE Through Blind SQLI in Where clause | $5500 | QIWI | https://hackerone.com/reports/816254
+193 | RCE | RCE Through Blind SQLI in Where clause | $1000 | QIWI | https://hackerone.com/reports/816560
+194 | RCE | RCE through Blind SQLI in prepared statement | $1000 | QIWI | https://hackerone.com/reports/816086
+195 | IDOR | Read-only user can change name of device in admin account | $50 | Helium | https://hackerone.com/reports/865115
+196 | Path Traversal | Access to restricted data through path traversal (requires valid authentication cookie) | $4000 | Starbucks | https://hackerone.com/reports/876295
+197 | XSS | Combining two minor harmless injections results in dom based Reflected XSS | $250 | Starbucks | https://hackerone.com/reports/396493
+198 | XSS | Bypass of previous issue by encoding " as %2522 | $250 | Starbucks | https://hackerone.com/reports/252908
+199 | SQLi | Blind, time-based SQLi due to unsafe handling of GET parameter | $15,000 | Mail.ru | https://hackerone.com/reports/868436
+200 | SSRF | By being able to redirect key lookups (since they are on your own domain and the lookup is done over DNS), you can trick the sending server into accessing arbitrary addresses. | $400 | Open-Xchange | https://hackerone.com/reports/792960
+201 | SSRF | Same as 201 but through different code. Being able to control DNS records for your own domain, you can redirect servers accessing your domain to get your public key into returning data from an internal asset. | $400 | Open-Xchange | https://hackerone.com/reports/792953
+202 | XSS | DOM XSS through XSS payload in UID field of key. Exploited by sending key to the victim, which then imports it. | $500 | Open-Xchange | https://hackerone.com/reports/788691
+203 | Information disclosure | Attacker can leak OAUTH token due to redirect\_uri not properly detecting IDN Homograph attacks (Unicode character confusion attack - é = e) | $1000 | SEMrush | https://hackerone.com/reports/861940
 
