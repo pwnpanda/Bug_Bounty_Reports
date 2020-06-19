@@ -6,12 +6,12 @@ Open for contributions from others as well, so please send a pull request if you
 
 # Content
 ### raw
--  [Markdown](https://github.com/Robiq/Bug_Bounty_Reports/blob/master/reports.md)
--  [HTML](https://github.com/Robiq/Bug_Bounty_Reports/blob/master/reports.html)
+-  [Markdown](https://github.com/pwnpanda/Bug_Bounty_Reports/blob/master/reports.md)
+-  [HTML](https://github.com/pwnpanda/Bug_Bounty_Reports/blob/master/reports.html)
 
 ### Rendered
--  [Markdown](https://robiq.github.io/Bug_Bounty_Reports/)
--  [HTML](https://robiq.github.io/Bug_Bounty_Reports/reports.html)
+-  [Markdown](https://pwnpanda.github.io/Bug_Bounty_Reports/)
+-  [HTML](https://pwnpanda.github.io/Bug_Bounty_Reports/reports.html)
 
 \# | Category | Description | Bounty | Program | URL
 -- | --- | --- | --- | --- | ---
