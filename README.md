@@ -218,4 +218,6 @@ Open for contributions from others as well, so please send a pull request if you
 201 | SSRF | Same as 201 but through different code. Being able to control DNS records for your own domain, you can redirect servers accessing your domain to get your public key into returning data from an internal asset. | $400 | Open-Xchange | https://hackerone.com/reports/792953
 202 | XSS | DOM XSS through XSS payload in UID field of key. Exploited by sending key to the victim, which then imports it. | $500 | Open-Xchange | https://hackerone.com/reports/788691
 203 | Information disclosure | Attacker can leak OAUTH token due to redirect\_uri not properly detecting IDN Homograph attacks (Unicode character confusion attack - é = e) | $1000 | SEMrush | https://hackerone.com/reports/861940
+204 | DoS | DoS through no length restriction on the "instruction" field when creating a new program. | $2500 | HackerOne | https://hackerone.com/reports/887321
+205 | CSRF | CSRF token is not checked | $250 | Visma | https://hackerone.com/reports/878443
 
