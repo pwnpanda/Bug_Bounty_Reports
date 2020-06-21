@@ -205,4 +205,6 @@
 203 | Information disclosure | Attacker can leak OAUTH token due to redirect\_uri not properly detecting IDN Homograph attacks (Unicode character confusion attack - é = e) | $1000 | SEMrush | https://hackerone.com/reports/861940
 204 | DoS | DoS through no length restriction on the "instruction" field when creating a new program. | $2500 | HackerOne | https://hackerone.com/reports/887321
 205 | CSRF | CSRF token is not checked | $250 | Visma | https://hackerone.com/reports/878443
+206 | Path Traversal | By executing a path traversal attack on the frontend, arbitrary API calls on the (internal only) backend was possible. This lead to being able to enumerate 100 million real users. | $4000 | Starbucks | https://samcurry.net/hacking-starbucks/
+
 
