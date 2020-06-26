@@ -221,4 +221,27 @@ Open for contributions from others as well, so please send a pull request if you
 204 | DoS | DoS through no length restriction on the "instruction" field when creating a new program. | $2500 | HackerOne | https://hackerone.com/reports/887321
 205 | CSRF | CSRF token is not checked | $250 | Visma | https://hackerone.com/reports/878443
 206 | Path Traversal | By executing a path traversal attack on the frontend, arbitrary API calls on the (internal only) backend was possible. This lead to being able to enumerate 100 million real users. | $4000 | Starbucks | https://samcurry.net/hacking-starbucks/
+207 | Privacy Violation | Incorrect usage of Google AD ID integration lead to privacy issue | $200 | NordVPN | https://hackerone.com/reports/803941
+208 | Insecure design principles | Including vendor based eval-stdin.php leads to potential RCE | $100 | NextCloud | https://hackerone.com/reports/820146
+209 | CSRF | Lack of CSRF protection when linking FaceBook account with Social Club account, lead to potential takeover. Required preconditions and deception to succeed. | $550 | Rockstar Games | https://hackerone.com/reports/653254
+210 | Information Disclosure | a chain of vulnerabilities leads to being able to possibly exfiltrate user tokens. One part was image injection in Screenshot-View function. | $500 | Rockstar Games | https://hackerone.com/reports/655288
+211 | Information Disclosure | Image injection in www.rockstargames.com/bully/screens could be combined with other minor issues to leak user tokens. | $500 | Rockstar Games | https://hackerone.com/reports/661646
+212 | XSS | DOM XSS in localized (different languages) Red Dead Redemption 2 video viewer. www.rockstargames.com/reddeadredemption2/br/videos | $750 | Rockstar Games | https://hackerone.com/reports/488108
+213 | CSRF | CSRF issue in language changing function for GTA Online could be chained with other vulnerabilities to leak user tokens. | $500 | Rockstar Games | https://hackerone.com/reports/809691
+214 | Information Disclosure | Image injection on www.rockstargames.com/bully/anniversaryedition. Could be combined with other issues to leak user tokens. | $500 | Rockstar Games | https://hackerone.com/reports/498358
+215 | Information Disclosure | Image injection-fix bypass in the screenshot-viewer utility | $500 | Rockstar Games | https://hackerone.com/reports/505259
+216 | Information Disclosure | Another Image injection-fix bypass in the screenshot-viewer utility | $500 | Rockstar Games | https://hackerone.com/reports/506126
+217 | XSS | Flash file based Open Redirect and XSS vulnerability.  | $500 | Rockstar Games | https://hackerone.com/reports/485382
+218 | Open Redirect | Open Redirect in changing language functionality on https://www.rockstargames.com/GTAOnline. This could be used to leak sensitive tokens from the URL through Referer header. | $500 | Rockstar Games | https://hackerone.com/reports/870062
+219 | XSS | Localized (different languages) versions of https://www.rockstargames.com/GTAOnline/ was vulnerable to DOM XSS in various locations. This combined with Open Redirect allowed for user token exfiltration. | $750 | Rockstar Games | https://hackerone.com/reports/508517
+220 | Information Disclosure | Image injection on localized (different languages) versions of games/info endpoint (https://www.rockstargames.com/br/#/games/info). This could lead to leaking user tokens through Referer header. | $500 | Rockstar Games | https://hackerone.com/reports/510388
+221 | Information Disclosure | Attack chain leading to leaking OAUTH tokens. Image injection in https://www.rockstargames.com/bully/anniversaryedition combined with other minor issues allowed for this attack to be successful. | $500 | Rockstar Games | https://hackerone.com/reports/659784
+222 | XSS | DOM XSS in localized versions of GTA Online screenshot site, like the following: https://www.rockstargames.com/GTAOnline/jp/screens/ | $750 | Rockstar Games | https://hackerone.com/reports/508475
+223 | XSS | DOM XSS in www.rockstargames.com/GTAOnline/features/freemode | $750 | Rockstar Games | https://hackerone.com/reports/799739
+224 | Improper Authentication | Host(origin) checking of Digits SDK passes attacker controlled string to function expecting regex, leading to using regex-specific characters in the domain name allowing for bypassing the check. ("." matching any character). The impact was account takeover. | $5040 | Twitter | https://hackerone.com/reports/129873
+225 | CSRF | User token leak through referer header, by abusing vulnerable chain of issues. This was due to insufficient refer header policy. The url was extracted through abusing an Open Redirect issue. The vulnerable endpoint was socialclub.rockstargames.com/crew/ | $750 | Rockstar Games | https://hackerone.com/reports/787160
+226 | CSRF | Leaking user tokens through referer header by exploiting a chain of issues. The part handled in this report is Image injection leading to XSS on https://www.rockstargames.com/newswire/article | $750 | Rockstar Games | https://hackerone.com/reports/790465
+227 | CSRF | Image injection on www.rockstargames.com/IV/screens/1280x720Image.html can be combined with other issues to leak user tokens. | $500 | Rockstar Games | https://hackerone.com/reports/784101
+228 | Information disclosure | Image injection on https://www.rockstargames.com/careers#/offices/. Combined in a chain with other attacks could lead to leaking user tokens. | $500 | Rockstar Games | https://hackerone.com/reports/491654
+
 
