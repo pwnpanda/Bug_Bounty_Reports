@@ -228,4 +228,8 @@
 226 | CSRF | Leaking user tokens through referer header by exploiting a chain of issues. The part handled in this report is Image injection leading to XSS on https://www.rockstargames.com/newswire/article | $750 | Rockstar Games | https://hackerone.com/reports/790465
 227 | CSRF | Image injection on www.rockstargames.com/IV/screens/1280x720Image.html can be combined with other issues to leak user tokens. | $500 | Rockstar Games | https://hackerone.com/reports/784101
 228 | Information disclosure | Image injection on https://www.rockstargames.com/careers#/offices/. Combined in a chain with other attacks could lead to leaking user tokens. | $500 | Rockstar Games | https://hackerone.com/reports/491654
-
+229 | Insufficient Session Expiration | No session invalidation after logout. Attacker can reuse known tokens | $100 | Visma | https://hackerone.com/reports/808731
+230 | Remote File Inclusion | Remote file inclusion through downloading file from chat. Uses path traversal to extract anywhere, and it can be hidden by setting a title for the file. | $5000 | Keybase | https://hackerone.com/reports/713006
+231 | Insecure Design Principles | Using RTLO (Right to left override) character allows spoofing the URL that will be displayed when navigating out of rinkerboats.vanillacommunities.com leading to potential phishing / other attacks..  aaa.  . .  | $150 | Vanilla | https://hackerone.com/reports/563268
+232 | XSS | Stored XSS in the Customer Number field. | $250 | Visma | https://hackerone.com/reports/882189
+233 | Information disclosure | CodeQL query to detect J2EE server having directory listing enabled, potentially allowing for source code disclosure. | $1800 | Github Security Lab | https://hackerone.com/reports/909374
