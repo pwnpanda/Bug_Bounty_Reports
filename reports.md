@@ -233,3 +233,12 @@
 231 | Insecure Design Principles | Using RTLO (Right to left override) character allows spoofing the URL that will be displayed when navigating out of rinkerboats.vanillacommunities.com leading to potential phishing / other attacks..  aaa.  . .  | $150 | Vanilla | https://hackerone.com/reports/563268
 232 | XSS | Stored XSS in the Customer Number field. | $250 | Visma | https://hackerone.com/reports/882189
 233 | Information disclosure | CodeQL query to detect J2EE server having directory listing enabled, potentially allowing for source code disclosure. | $1800 | Github Security Lab | https://hackerone.com/reports/909374
+234 | XSS | XSS in account.mail.ru due to unsafe handling of GET parameter (User-assisted == Requires user interaction?) | $1000 | Mail.ru | https://hackerone.com/reports/889874
+235 | Information leak | MySQL credentials leaked to publicly available config file | $150 | Mail.ru | https://hackerone.com/reports/879389
+236 | SSRF | SSRF through using the relap.io function allowing for fetching external resources, allowing access to the production network in a transparent manner. (Non-blind) | $1700 | Mail.ru | https://hackerone.com/reports/739962
+237 | XSS | Stored XSS by authenticated user to all other users through the /wp-admin/edit.php?post\_type=forum endpoint | $225 | Wordpress | https://hackerone.com/reports/881918
+238 | Information leak | A misconfigured web directory disclosed files that showed NordVPNs public proxy list and corresponding port numbers | $50 | NordVPN | https://hackerone.com/reports/791826
+239 | Privilege Escalation | An attacker can kick out any other member of any organization, given that they know the membership ID of the user. This is due to an IDOR in the delete membership functionality, which can be triggered by: `DELETE /api/memberships/id` | $100 | Helium | https://hackerone.com/reports/810320
+
+
+
