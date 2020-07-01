@@ -239,6 +239,10 @@
 237 | XSS | Stored XSS by authenticated user to all other users through the /wp-admin/edit.php?post\_type=forum endpoint | $225 | Wordpress | https://hackerone.com/reports/881918
 238 | Information leak | A misconfigured web directory disclosed files that showed NordVPNs public proxy list and corresponding port numbers | $50 | NordVPN | https://hackerone.com/reports/791826
 239 | Privilege Escalation | An attacker can kick out any other member of any organization, given that they know the membership ID of the user. This is due to an IDOR in the delete membership functionality, which can be triggered by: `DELETE /api/memberships/id` | $100 | Helium | https://hackerone.com/reports/810320
-
+240 | Command Injection | Reflected XSS in certain endpoints allows account takeover. Attackers can also perform sensitive actions on behalf of authenticated users.  | $594 | Ubiquiti Inc. | https://hackerone.com/reports/661647
+241 | Command Injection | Certain end-points are vulnerable to command injection when using specifically crafted input, leading to RCE. This vulnerability can be triggered through other vulnerabilities, like XSS and CSRF. | $6839 | Ubiquiti Inc. | https://hackerone.com/reports/703659
+242 | Logic bug | Bat files and other malicious executables (or any other filetypes and content) can be concealed as normal content, like .csv files by including illegal characters as content. | $1500 | Slack | https://hackerone.com/reports/833080
+243 | XSS | XSS through unsafe URI handling in ASP.net on base starbucks.com domain | $500 | Starbucks | https://hackerone.com/reports/881115
+244 | Bruteforce | User passwords can be brute forced due to lack of rate limiting  | $700 | Twitter | https://hackerone.com/reports/854424
 
 
