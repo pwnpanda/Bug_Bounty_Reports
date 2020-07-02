@@ -259,5 +259,5 @@ Open for contributions from others as well, so please send a pull request if you
 242 | Logic bug | Bat files and other malicious executables (or any other filetypes and content) can be concealed as normal content, like .csv files by including illegal characters as content. | $1500 | Slack | https://hackerone.com/reports/833080
 243 | XSS | XSS through unsafe URI handling in ASP.net on base starbucks.com domain | $500 | Starbucks | https://hackerone.com/reports/881115
 244 | Bruteforce | User passwords can be brute forced due to lack of rate limiting  | $700 | Twitter | https://hackerone.com/reports/854424
-
+245 | Request Smuggling | console.helium.com is vulnerable to CL.TE request smuggling.  | $500 | Helium | https://hackerone.com/reports/867952
 
