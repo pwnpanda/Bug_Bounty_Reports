@@ -260,4 +260,8 @@ Open for contributions from others as well, so please send a pull request if you
 243 | XSS | XSS through unsafe URI handling in ASP.net on base starbucks.com domain | $500 | Starbucks | https://hackerone.com/reports/881115
 244 | Bruteforce | User passwords can be brute forced due to lack of rate limiting  | $700 | Twitter | https://hackerone.com/reports/854424
 245 | Request Smuggling | console.helium.com is vulnerable to CL.TE request smuggling.  | $500 | Helium | https://hackerone.com/reports/867952
+246 | CSRF | CSRF allowing an attacker to import any novel to the victims chatstory (pixiv service) | $500 | Pixiv | https://hackerone.com/reports/534908
+247 | Improper Authentication | 2FA bypass by not supplying a 2FA code. Likely lack of null check. Vulnerable request is likely something like this: "email":"attack@lol.com","2FA":"" | $1000 | Glassdoor | https://hackerone.com/reports/897385
+248 | Logic Bug | Users are able for forge requests, leading to being able to spawn additional units at will. This is done through (what looks like) a leaked secret and a lack of proper server side validation. | $1100 | InnoGames | https://hackerone.com/reports/802636
+
 
