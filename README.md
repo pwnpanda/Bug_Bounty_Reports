@@ -263,5 +263,8 @@ Open for contributions from others as well, so please send a pull request if you
 246 | CSRF | CSRF allowing an attacker to import any novel to the victims chatstory (pixiv service) | $500 | Pixiv | https://hackerone.com/reports/534908
 247 | Improper Authentication | 2FA bypass by not supplying a 2FA code. Likely lack of null check. Vulnerable request is likely something like this: `"email":"attack@lol.com","2FA":""` | $1000 | Glassdoor | https://hackerone.com/reports/897385
 248 | Logic Bug | Users are able for forge requests, leading to being able to spawn additional units at will. This is done through (what looks like) a leaked secret and a lack of proper server side validation. | $1100 | InnoGames | https://hackerone.com/reports/802636
-
+249 | Open Redirect | Open redirect requiring user to click in order to work | $100 | LocalTapiola | https://hackerone.com/reports/194017
+250 | Insecure design principles | CodeQL query to check for improper SSL certificates | $1800 | GitHub | https://hackerone.com/reports/917454
+251 | Command injection | CodeQL query to detect OGNL injection | $2300 | Github | https://hackerone.com/reports/917455
+252 | Use after free | A use-after-free vulnerability exists in the IPV6 option of setsockopt, as it is possible to race and free the `struct_ip6_pktopts` buffer (TOCTOU) while it is being handled by `ip6_setpktopt`. This struct contains pointers that can be used for R/W primitives in the kernel. Combining this vulnerability with a known WebKit issue allows for easy exploitation. | $10,000 | PlayStation | https://hackerone.com/reports/826026
 
