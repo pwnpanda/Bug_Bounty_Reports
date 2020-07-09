@@ -4251,6 +4251,110 @@
 </td>
 </tr>
 
+<tr>
+<td class="numberingColumn confluenceTd" colspan="1">253
+</td>
+<td class="confluenceTd" colspan="1">CSRF
+</td>
+<td class="confluenceTd" colspan="1">
+<span style="color: #000080;">&nbsp;/community/create-post.js was vulnerable to CSRF attacks, allowing an attacker to spam the community boards as other users. This attack was only possible through Chrome.
+</span>
+</td>
+<td class="confluenceTd" colspan="1">$150
+</td>
+<td class="confluenceTd" colspan="1">Rockstar Games
+</td>
+<td class="confluenceTd" colspan="1">
+<a href="https://hackerone.com/reports/487378">https://hackerone.com/reports/487378
+</a>
+</td>
+</tr>
+<tr>
+<td class="numberingColumn confluenceTd" colspan="1">254
+</td>
+<td class="confluenceTd" colspan="1">CSRF
+</td>
+<td class="confluenceTd" colspan="1">
+<p>
+<a href="https://www.rockstargames.com/reddeadonline/feedback/submit.json">https://www.rockstargames.com/reddeadonline/feedback/submit.json
+</a>&nbsp;was vulnerable to CSRF attacks and could be exploited through a remote server. This attack was only possible through Chrome.
+</p>
+</td>
+<td class="confluenceTd" colspan="1">$150
+</td>
+<td class="confluenceTd" colspan="1">Rockstar Games
+</td>
+<td class="confluenceTd" colspan="1">
+<a href="https://hackerone.com/reports/796295">https://hackerone.com/reports/796295
+</a>
+</td>
+</tr>
+<tr>
+<td class="numberingColumn confluenceTd" colspan="1">255
+</td>
+<td class="confluenceTd" colspan="1">LFI
+</td>
+<td class="confluenceTd" colspan="1">LFI of files with .md extension from&nbsp;
+<span style="color: #003366;">/var/www/dashboard/new/ was possible. In addition, remote file inclusion from github was possible due to the default value of $docs_path, leading to XSS.
+</span>
+</td>
+<td class="confluenceTd" colspan="1">$300
+</td>
+<td class="confluenceTd" colspan="1">TTS Bug Bounty
+</td>
+<td class="confluenceTd" colspan="1">
+<a href="https://hackerone.com/reports/895972">https://hackerone.com/reports/895972
+</a>
+</td>
+</tr>
+<tr>
+<td class="numberingColumn confluenceTd" colspan="1">256
+</td>
+<td class="confluenceTd" colspan="1">Logic Bug
+</td>
+<td class="confluenceTd" colspan="1">Unlimited file upload in the image assigned to a contact leads to XSS by uploading malicious SVG.&nbsp;
+</td>
+<td class="confluenceTd" colspan="1">$100
+</td>
+<td class="confluenceTd" colspan="1">Nextcloud
+</td>
+<td class="confluenceTd" colspan="1">
+<a href="https://hackerone.com/reports/808287">https://hackerone.com/reports/808287
+</a>
+</td>
+</tr>
+<tr>
+<td class="numberingColumn confluenceTd" colspan="1" width="">257
+</td>
+<td class="confluenceTd" colspan="1" width="">CRLF Injection
+</td>
+<td class="confluenceTd" colspan="1" width="">Malicious users (non-admins) can write to memcached when using a malicious URL as a share.
+</td>
+<td class="confluenceTd" colspan="1" width="">$100
+</td>
+<td class="confluenceTd" colspan="1" width="">Nextcloud
+</td>
+<td class="confluenceTd" colspan="1" width="">
+<a class="" href="https://hackerone.com/reports/592864">https://hackerone.com/reports/592864
+</a>
+</td>
+</tr>
+<tr>
+<td class="numberingColumn confluenceTd" colspan="1" width="">258
+</td>
+<td class="confluenceTd" colspan="1" width="">HTTP Request Smuggling
+</td>
+<td class="confluenceTd" colspan="1" width="">CL.TE based request smuggling on api.zomato.com leading to account takeover among other issues. This issue was only reproducible when using the DELETE verb. As such, make sure to test for all HTTP verbs when checking for Request Smuggling
+</td>
+<td class="confluenceTd" colspan="1" width="">$5000
+</td>
+<td class="confluenceTd" colspan="1" width="">Zomato
+</td>
+<td class="confluenceTd" colspan="1" width="">
+<a class="" href="https://hackerone.com/reports/771666">https://hackerone.com/reports/771666
+</a>
+</td>
+</tr>
 
 
 </tbody>

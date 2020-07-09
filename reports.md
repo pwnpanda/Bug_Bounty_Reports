@@ -252,5 +252,12 @@
 250 | Insecure design principles | CodeQL query to check for improper SSL certificates | $1800 | GitHub | https://hackerone.com/reports/917454
 251 | Command injection | CodeQL query to detect OGNL injection | $2300 | Github | https://hackerone.com/reports/917455
 252 | Use after free | A use-after-free vulnerability exists in the IPV6 option of setsockopt, as it is possible to race and free the `struct_ip6_pktopts` buffer (TOCTOU) while it is being handled by `ip6_setpktopt`. This struct contains pointers that can be used for R/W primitives in the kernel. Combining this vulnerability with a known WebKit issue allows for easy exploitation. | $10,000 | PlayStation | https://hackerone.com/reports/826026
+253 | CSRF |  `/community/create-post.js` was vulnerable to CSRF attacks, allowing an attacker to spam the community boards as other users. This attack was only possible through Chrome. | $150 | Rockstar Games | https://hackerone.com/reports/487378
+254 | CSRF | `https://www.rockstargames.com/reddeadonline/feedback/submit.json` was vulnerable to CSRF attacks and could be exploited through a remote server. This attack was only possible through Chrome. | $150 | Rockstar Games | https://hackerone.com/reports/796295
+255 | LFI | LFI of files with .md extension from `/var/www/dashboard/new/` was possible. In addition, remote file inclusion from github was possible due to the default value of `$docs_path`, leading to XSS. | $300 | TTS Bug Bounty | https://hackerone.com/reports/895972
+256 | Logic Bug | Unlimited file upload in the image assigned to a contact leads to XSS by uploading malicious SVG.  | $100 | Nextcloud | https://hackerone.com/reports/808287
+257 | CRLF Injection | Malicious users (non-admins) can write to memcached when using a malicious URL as a share. | $100 | Nextcloud | https://hackerone.com/reports/592864
+258 | HTTP Request Smuggling | CL.TE based request smuggling on api.zomato.com leading to account takeover among other issues. This issue was only reproducible when using the DELETE verb. As such, make sure to test for all HTTP verbs when checking for Request Smuggling | $5000 | Zomato | https://hackerone.com/reports/771666
+
 
 
