@@ -258,7 +258,7 @@
 256 | Logic Bug | Unlimited file upload in the image assigned to a contact leads to XSS by uploading malicious SVG.  | $100 | Nextcloud | https://hackerone.com/reports/808287
 257 | CRLF Injection | Malicious users (non-admins) can write to memcached when using a malicious URL as a share. | $100 | Nextcloud | https://hackerone.com/reports/592864
 258 | HTTP Request Smuggling | CL.TE based request smuggling on api.zomato.com leading to account takeover among other issues. This issue was only reproducible when using the DELETE verb. As such, make sure to test for all HTTP verbs when checking for Request Smuggling | $5000 | Zomato | https://hackerone.com/reports/771666
-259 |XSS | Reflected XSS on  https://www.tumblr.com/abuse/start?prefill=<base64PL>. It only works on Firefox version 69 or lower. | $250 | Automattic | https://hackerone.com/reports/915756
+259 |XSS | Reflected XSS on  `https://www.tumblr.com/abuse/start?prefill=<base64PL>`. It only works on Firefox version 69 or lower. | $250 | Automattic | https://hackerone.com/reports/915756
 260 | Logic Bug | CodeQL query to detect insecure use of postMessage. It checks if indexOf or startsWith is used to check MessageEvent.origin, which can lead to XSS or other issues. | $1800 | GitHub  | https://hackerone.com/reports/920285
 261 | DoS | DoS by sending many requests to apply for a certain job, due to relying on responses from a 3rd party server before returning.  | $100 | Maximum | https://hackerone.com/reports/892615
 262 | Session Fixation | An issue where not all sessions being terminated when the password was reset. | $50 | Moneybird | https://hackerone.com/reports/743518
