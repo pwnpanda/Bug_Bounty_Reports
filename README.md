@@ -279,4 +279,7 @@ Open for contributions from others as well, so please send a pull request if you
 262 | Session Fixation | An issue where not all sessions being terminated when the password was reset. | $50 | Moneybird | https://hackerone.com/reports/743518
 263 | Improper authentication | https://werkenbijderet.nl/vacature-alert endpoint did not have proper rate limiting implemented, leading to being able to send thousands of mails within 10 minutes. | $100 | Maximum | https://hackerone.com/reports/882942
 264 | SSRF | Being able to call all internal classes, functions and parameters due to everything being declared public. This leads to blind SSRF through Gopher protocol. | $300 | TTS Bug Bounty | https://hackerone.com/reports/895696
+265 | IDOR | Read only user can delete other users through IDOR | $50 | Helium | https://hackerone.com/reports/888729
+266 | Brute Force | It is possible to brute force the login prompt of `app.mopub.com` due to only having IP based rate limiting. It should have CAPTCHA or block all access to the locked out account, not just add restrictions to the violating IP (as changing IPs is easy). | $420 | Twitter | https://hackerone.com/reports/819930
+
 
