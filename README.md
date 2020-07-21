@@ -294,6 +294,7 @@ Open for contributions from others as well, so please send a pull request if you
 277 | IDOR | The `selectAddressId` in the cookie combined with the `delivery_subzone` in the GET request, allows for unauthenticated enumeration of all addresses registered to users. This cannot be tied to a specific user. This is due to the backend disclosing the full, stored address of a user, given that the `delivery_subzone` matches that associated with the `selectAddressId` without any further authentication | $1500 | Zomato | https://hackerone.com/reports/514897
 278 | Logic bug | Due to not sufficiently protecting which apps can retrieve the token in the authentication flow, it is possible for a malicious application to take over the account of the user. This requires a malicious app preinstalled on the victims device to be successful.  | $500 | Shopify | https://hackerone.com/reports/855618
 279 | Improper authentication | An attacker can generate app tokens through the `adminGenerateSession` mutation in the admin panel, as a staff member with no permissions. This would give access to a small subset of installed apps, limited to the current shop. | $2000 | Shopify | https://hackerone.com/reports/898528
+280 | XSS | Stored XSS in admin interface through "evaluation of purchase process"-window | $1500 | Mail.ru | https://hackerone.com/reports/874387
 
 
 
