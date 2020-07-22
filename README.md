@@ -295,6 +295,7 @@ Open for contributions from others as well, so please send a pull request if you
 278 | Logic bug | Due to not sufficiently protecting which apps can retrieve the token in the authentication flow, it is possible for a malicious application to take over the account of the user. This requires a malicious app preinstalled on the victims device to be successful.  | $500 | Shopify | https://hackerone.com/reports/855618
 279 | Improper authentication | An attacker can generate app tokens through the `adminGenerateSession` mutation in the admin panel, as a staff member with no permissions. This would give access to a small subset of installed apps, limited to the current shop. | $2000 | Shopify | https://hackerone.com/reports/898528
 280 | XSS | Stored XSS in admin interface through "evaluation of purchase process"-window | $1500 | Mail.ru | https://hackerone.com/reports/874387
-
+281 | DoS | Certain files in /etc/ are writable. For example hosts, hostname and resolve.conf. While the last two seems to have special handling, /etc/hosts is inherently vulnerable. This leads to being able to DoS a service by writing large amounts of data to the file.  | $1000 | Kubernetes | https://hackerone.com/reports/867699
+282 | Logic bug | GraphQL query for finding incorrect hostname comparison. This is especially prevalent in Android applications. | $1500 | GitHub  | https://hackerone.com/reports/929288
 
 
