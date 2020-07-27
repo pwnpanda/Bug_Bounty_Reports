@@ -297,5 +297,16 @@ Open for contributions from others as well, so please send a pull request if you
 280 | XSS | Stored XSS in admin interface through "evaluation of purchase process"-window | $1500 | Mail.ru | https://hackerone.com/reports/874387
 281 | DoS | Certain files in /etc/ are writable. For example hosts, hostname and resolve.conf. While the last two seems to have special handling, /etc/hosts is inherently vulnerable. This leads to being able to DoS a service by writing large amounts of data to the file.  | $1000 | Kubernetes | https://hackerone.com/reports/867699
 282 | Logic bug | GraphQL query for finding incorrect hostname comparison. This is especially prevalent in Android applications. | $1500 | GitHub  | https://hackerone.com/reports/929288
-
+283 | Logic bug | Misconfiguration lead to being able to get SmartDNS for free for longer than it should be. | $700 | NordVPN | https://hackerone.com/reports/925757
+284 | XXE | XXE on starbucks.com.sg/RestAPI/* leading to arbitrary file read | $500 | Starbucks | https://hackerone.com/reports/762251
+285 | Account Takeover | Due to improper authentication when setting up 2FA, it is possible to takeover an account given that you know the USER ID. This is not likely to leak and as such reduces the impact of this vulnerability. | $100 | Helium | https://hackerone.com/reports/810880
+286 | Information Disclosure | It was possible to view thumbnails of private videos through attacking the API | $750 | Pornhub | https://hackerone.com/reports/138703
+287 | DoS | Improper handling of renaming HackerOne groups for managing access rights for programs, leads to excessive resource use which may lead to DoS | $2500 | HackerOne | https://hackerone.com/reports/880187
+288 | DoS | DoS through recursive evaluation. Can be done remotely by an attacker with elevated privileges. | $200 | Kubernetes | https://hackerone.com/reports/882923
+289 | Logic bug | By tampering requests regarding which retailers you can earn cashback from to be an empty list, you can earn cashback from all retailers on the platform. Normally premium users can only select 6 and normal users can only select 3. This can only be set once, but using this vulnerability you can switch at any time. | $1000 | Curve | https://hackerone.com/reports/672487
+290 | Use of weak PRNG | Grammarly Keyboard for Android used weak PRNG allowing a malicious app installed on the device to guess the PKCE code value and steal the OAUTH access token of a user. Fixed by changing to SecureRandom | $2000 | Grammarly | https://hackerone.com/reports/824931
+291 | Improper Authentication | H1 SAML implementation allows for re-using SAML response for up to 10 minutes, allowing for increased risk in case an attacker can ever intercept or otherwise compromise such a request. | $500 | HackerOne | https://hackerone.com/reports/888930
+292 | DoS | DoS of account (for Chrome) when viewing a tweet containing the link twitter.com/%00 | $560 | Twitter | https://hackerone.com/reports/921286
+293 | IDOR | IDOR allows user to access pictures from other users, including EXIF data.  | $200 | IRRCloud | https://hackerone.com/reports/906907
+294 | Information leak | After the `policy_markdown_html` was added inside the team Graphql query, it was possible to enumerate if public programs also had private programs. In case they did, you could also see their internal policy. | $2500 | HackerOne | https://hackerone.com/reports/877642
 
