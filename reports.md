@@ -294,4 +294,8 @@
 292 | DoS | DoS of account (for Chrome) when viewing a tweet containing the link twitter.com/%00 | $560 | Twitter | https://hackerone.com/reports/921286
 293 | IDOR | IDOR allows user to access pictures from other users, including EXIF data.  | $200 | IRRCloud | https://hackerone.com/reports/906907
 294 | Information leak | After the `policy_markdown_html` was added inside the team Graphql query, it was possible to enumerate if public programs also had private programs. In case they did, you could also see their internal policy. | $2500 | HackerOne | https://hackerone.com/reports/877642
+295 | Phishing | Ability to spoof interface elements through adding tags or attributes in calendar events at calendar.mail.ru | $150 | Mail.ru | https://hackerone.com/reports/847473
+296 | Code injection | CodeQL query for detecting possible template injections in Python | $2300 | Github | https://hackerone.com/reports/944359
+297 | XSS | By adding a link in a post and manually editing out a portion (`denied:`), then reblogging the post, the XSS will execute after the victim clicks the link (on the reblogged post). | $350 | Automattic | https://hackerone.com/reports/882546
+298 | Command Injection | Since GitLab allows for code injection through Mermaid, you can achieve arbitrary PUT requests in the context of the victim through this command injection. The victim has to have the required privilege to perform the action for the attack to succeed. | $3000 | Gitlab | https://hackerone.com/reports/824689
 
