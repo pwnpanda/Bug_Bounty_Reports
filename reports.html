@@ -5287,6 +5287,152 @@
 </a>
 </td>
 </tr>
+<tr>
+<td class="numberingColumn confluenceTd" colspan="1">308
+</td>
+<td class="confluenceTd" colspan="1">Client side enforcement of Server-side Security
+</td>
+<td class="confluenceTd" colspan="1">Due to silently ignoring the content length header, it is possible to bypass the size check for S3 buckets and upload attachments of any size. The solution is to add "content-length" header to whitelisted headers.
+</td>
+<td class="confluenceTd" colspan="1">$500
+</td>
+<td class="confluenceTd" colspan="1">Ruby on Rails
+</td>
+<td class="confluenceTd" colspan="1">
+<a class="" href="https://hackerone.com/reports/789579">https://hackerone.com/reports/789579
+</a>
+</td>
+</tr>
+<tr>
+<td class="numberingColumn confluenceTd" colspan="1" width="">309
+</td>
+<td class="confluenceTd" colspan="1" width="">Logic bug
+</td>
+<td class="confluenceTd" colspan="1" width="">When creating a hash, the permit function does not sufficiently protect when converting using .each(), allowing for sneaking in additional parameters that should not logically be present
+</td>
+<td class="confluenceTd" colspan="1" width="">$500
+</td>
+<td class="confluenceTd" colspan="1" width="">Ruby on Rails
+</td>
+<td class="confluenceTd" colspan="1" width="">
+<a class="" href="https://hackerone.com/reports/292797">https://hackerone.com/reports/292797
+</a>
+</td>
+</tr>
+<tr>
+<td class="numberingColumn confluenceTd" colspan="1" width="">310
+</td>
+<td class="confluenceTd" colspan="1" width="">Null pointer dereference
+</td>
+<td class="confluenceTd" colspan="1" width="">A lack of proper checks for user supplied data results in a null pointer dereference.
+</td>
+<td class="confluenceTd" colspan="1" width="">$1500
+</td>
+<td class="confluenceTd" colspan="1" width="">Open-Xchange
+</td>
+<td class="confluenceTd" colspan="1" width="">
+<a class="" href="https://hackerone.com/reports/827729">https://hackerone.com/reports/827729
+</a>
+</td>
+</tr>
+<tr>
+<td class="numberingColumn confluenceTd" colspan="1" width="">311
+</td>
+<td class="confluenceTd" colspan="1" width="">Use After Free
+</td>
+<td class="confluenceTd" colspan="1" width="">Due to incorrectly decreasing a reference counter, by sending a lot of newline characters ("
+<span style="color: #000000;">\n") you can reach code checking the cmd-variable which has previously been freed.
+</span>
+</td>
+<td class="confluenceTd" colspan="1" width="">$500
+</td>
+<td class="confluenceTd" colspan="1" width="">Open-Xchange
+</td>
+<td class="confluenceTd" colspan="1" width="">
+<a class="" href="https://hackerone.com/reports/827051">https://hackerone.com/reports/827051
+</a>
+</td>
+</tr>
+<tr>
+<td class="numberingColumn confluenceTd" colspan="1" width="">312
+</td>
+<td class="confluenceTd" colspan="1" width="">IDOR
+</td>
+<td class="confluenceTd" colspan="1" width="">Account takeover through IDOR in password recovery procedure
+</td>
+<td class="confluenceTd" colspan="1" width="">$1500
+</td>
+<td class="confluenceTd" colspan="1" width="">Mail.ru
+</td>
+<td class="confluenceTd" colspan="1" width="">
+<a class="" href="https://hackerone.com/reports/843160">https://hackerone.com/reports/843160
+</a>
+</td>
+</tr>
+<tr>
+<td class="numberingColumn confluenceTd" colspan="1" width="">313
+</td>
+<td class="confluenceTd" colspan="1" width="">IDOR
+</td>
+<td class="confluenceTd" colspan="1" width="">Could disclose attributes of arbitrary sites due to a IDOR in relap.io
+</td>
+<td class="confluenceTd" colspan="1" width="">$750
+</td>
+<td class="confluenceTd" colspan="1" width="">Mail.ru
+</td>
+<td class="confluenceTd" colspan="1" width="">
+<a class="" href="https://hackerone.com/reports/749887">https://hackerone.com/reports/749887
+</a>
+</td>
+</tr>
+<tr>
+<td class="numberingColumn confluenceTd" colspan="1" width="">314
+</td>
+<td class="confluenceTd" colspan="1" width="">XSS
+</td>
+<td class="confluenceTd" colspan="1" width="">By uploading a PNG with JS and XML code, and adding it to a Wiki page, it was possible to achieve stored XSS&nbsp;
+</td>
+<td class="confluenceTd" colspan="1" width="">$1500
+</td>
+<td class="confluenceTd" colspan="1" width="">GitLab
+</td>
+<td class="confluenceTd" colspan="1" width="">
+<a class="" href="https://hackerone.com/reports/880099">https://hackerone.com/reports/880099
+</a>
+</td>
+</tr>
+<tr>
+<td class="numberingColumn confluenceTd" colspan="1" width="">315
+</td>
+<td class="confluenceTd" colspan="1" width="">Improper Access Control
+</td>
+<td class="confluenceTd" colspan="1" width="">Lack of access control on the ListMembers query allowed for enumeration of members in private lists. Finding the TwitterID is difficult, but can be done by brute force by attacking different endpoints. To further show impact, it was demonstrated that x-response-time header discloses if the lists exists or not.
+</td>
+<td class="confluenceTd" colspan="1" width="">$2940
+</td>
+<td class="confluenceTd" colspan="1" width="">Twitter
+</td>
+<td class="confluenceTd" colspan="1" width="">
+<a class="" href="https://hackerone.com/reports/885539">https://hackerone.com/reports/885539
+</a>
+</td>
+</tr>
+<tr>
+<td class="numberingColumn confluenceTd" colspan="1" width="">316
+</td>
+<td class="confluenceTd" colspan="1" width="">XSS
+</td>
+<td class="confluenceTd" colspan="1" width="">Stored XSS through the blob-viewer. The payload is in the description field.
+</td>
+<td class="confluenceTd" colspan="1" width="">$2000
+</td>
+<td class="confluenceTd" colspan="1" width="">GitLab
+</td>
+<td class="confluenceTd" colspan="1" width="">
+<a class="" href="https://hackerone.com/reports/806571">https://hackerone.com/reports/806571
+</a>
+</td>
+</tr>
 
 </tbody>
 </table>
