@@ -337,4 +337,12 @@ Open for contributions from others as well, so please send a pull request if you
 320 | Logic bug | Ability to decrease payment by maximum 1 currency unit (0.99) for any purchase | $150 | Zomato | https://hackerone.com/reports/927661
 321 | Improper access control | Access control issue due to not correctly checking permissions in the active session for the user | $100 | Visma Public | https://hackerone.com/reports/812143
 322 | Information leak | Ability to see error message related to character encoding from SQL operation by adding the poop-emoji to the email field during registration | $100 | Unikrn | https://hackerone.com/reports/866271
-
+323 | SQL Injection | SOLR injection through adding `\`to the query. | $100 | Zomato | https://hackerone.com/reports/844428
+324 | SQL Injection | Blind SQLi in `res_id` of `/php/geto2banner`. PoC is `res_id=51-CASE/**/WHEN(LENGTH(version())=10)THEN(SLEEP(6*1))END&city_id=0` | $2000 | Zomato | https://hackerone.com/reports/838855
+325 | SQL Injection | Same as #326, but on a different endpoint: `/php/widgets_handler.php`. PoC: `:/php/widgets_handler.php?method=getResWidgetButton&res_id=51-CASE/**/WHEN(LENGTH(​version()​)=​10​)THEN(SLEEP(6*1))END` | $2000 | Zomato | https://hackerone.com/reports/836079
+326 | Improper access control | The food.grammarly.io site uses Meter framework, and is lacking proper authorization for sensitive endpoints. The attacker could leak user data and employee data, including access tokens, by calling the functions directly from JS (for example in dev tools) | $1000 | Grammarly | https://hackerone.com/reports/745495
+327 | SQL Injection | The reporter identified a SOLR injection on the `user_id` parameter at `:/v2/leaderboard_v2.json`. This had low impact, but the internal team found a boolean based blind SQLi in the same codebase when investigating and rewarded the report as such. | $2000 | Zomato | https://hackerone.com/reports/952501
+328 | Special element injection | SOLR injection similar to #324, but on a different endpoint. PoC `:v2/red/homepage.json?lat=&lon=&city_id={!dismax+df=city_id}86&android_country=US&lang=en&android_language=en` | $150 | Zomato | https://hackerone.com/reports/953203
+329 | Missing authorization | Missing authorization checks lead to a user only allowed to do sales being able to record payments he was not supposed to | $250 | Visma Public | https://hackerone.com/reports/919008
+330 | SSRF | CodeQL query for detecting SSRF issues in Golang libraries and code | $1800 | Github Security lab | https://hackerone.com/reports/956296
+331 | LDAP Injection | CodeQL query for detecting LDAP injections in Java, supporting Java JNDI, UnboundID, SPring LDAP and Apache LDAP API | $2500 | Github Security lab | https://hackerone.com/reports/956295

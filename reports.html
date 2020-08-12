@@ -5531,6 +5531,158 @@
 </a>
 </td>
 </tr>
+<tr>
+<td class="numberingColumn confluenceTd" colspan="1" width="">323
+</td>
+<td class="confluenceTd" colspan="1" width="">SQL Injection
+</td>
+<td class="confluenceTd" colspan="1" width="">SOLR injection through adding `\`to the query.
+</td>
+<td class="confluenceTd" colspan="1" width="">$100
+</td>
+<td class="confluenceTd" colspan="1" width="">Zomato
+</td>
+<td class="confluenceTd" colspan="1" width="">
+<a class="" href="https://hackerone.com/reports/844428">https://hackerone.com/reports/844428
+</a>
+</td>
+</tr>
+<tr>
+<td class="numberingColumn confluenceTd" colspan="1" width="">324
+</td>
+<td class="confluenceTd" colspan="1" width="">SQL Injection
+</td>
+<td class="confluenceTd" colspan="1" width="">Blind SQLi in `res_id` of `/php/geto2banner`. PoC is `
+<span style="color: #333333;">res_id=51-CASE/**/WHEN(LENGTH(version())=10)THEN(SLEEP(6*1))END&amp;city_id=0
+</span>`
+</td>
+<td class="confluenceTd" colspan="1" width="">$2000
+</td>
+<td class="confluenceTd" colspan="1" width="">Zomato
+</td>
+<td class="confluenceTd" colspan="1" width="">
+<a class="" href="https://hackerone.com/reports/838855">https://hackerone.com/reports/838855
+</a>
+</td>
+</tr>
+<tr>
+<td class="numberingColumn confluenceTd" colspan="1" width="">325
+</td>
+<td class="confluenceTd" colspan="1" width="">SQL Injection
+</td>
+<td class="confluenceTd" colspan="1" width="">Same as #326, but on a different endpoint:&nbsp;`/php/widgets_handler.php`. PoC: `
+<span style="color: #333333;">:/php/widgets_handler.php?method=getResWidgetButton&amp;res_id=51-CASE/**/WHEN(LENGTH(​version()​)=​10​)THEN(SLEEP(6*1))END
+</span>`
+</td>
+<td class="confluenceTd" colspan="1" width="">$2000
+</td>
+<td class="confluenceTd" colspan="1" width="">Zomato
+</td>
+<td class="confluenceTd" colspan="1" width="">
+<a class="" href="https://hackerone.com/reports/836079">https://hackerone.com/reports/836079
+</a>
+</td>
+</tr>
+<tr>
+<td class="numberingColumn confluenceTd" colspan="1" width="">326
+</td>
+<td class="confluenceTd" colspan="1" width="">Improper access control
+</td>
+<td class="confluenceTd" colspan="1" width="">The food.grammarly.io site uses Meter framework, and is lacking proper authorization for sensitive endpoints. The attacker could leak user data and employee data, including access tokens, by calling the functions directly from JS (for example in dev tools)
+</td>
+<td class="confluenceTd" colspan="1" width="">$1000
+</td>
+<td class="confluenceTd" colspan="1" width="">Grammarly
+</td>
+<td class="confluenceTd" colspan="1" width="">
+<a class="" href="https://hackerone.com/reports/745495">https://hackerone.com/reports/745495
+</a>
+</td>
+</tr>
+<tr>
+<td class="numberingColumn confluenceTd" colspan="1" width="">327
+</td>
+<td class="confluenceTd" colspan="1" width="">SQL Injection
+</td>
+<td class="confluenceTd" colspan="1" width="">The reporter identified a SOLR injection on the `user_id` parameter at `
+<span style="color: #333333;">:/v2/leaderboard_v2.json
+</span>`. This had low impact, but the internal team found a boolean based blind SQLi in the same codebase when investigating and rewarded the report as such.
+</td>
+<td class="confluenceTd" colspan="1" width="">$2000
+</td>
+<td class="confluenceTd" colspan="1" width="">Zomato
+</td>
+<td class="confluenceTd" colspan="1" width="">
+<a class="" href="https://hackerone.com/reports/952501">https://hackerone.com/reports/952501
+</a>
+</td>
+</tr>
+<tr>
+<td class="numberingColumn confluenceTd" colspan="1" width="">328
+</td>
+<td class="confluenceTd" colspan="1" width="">Special element injection
+</td>
+<td class="confluenceTd" colspan="1" width="">SOLR injection similar to #324, but on a different endpoint. PoC `
+<span style="color: #333333;">:v2/red/homepage.json?lat=&amp;lon=&amp;city_id={!dismax+df=city_id}86&amp;android_country=US&amp;lang=en&amp;android_language=en
+</span>`
+</td>
+<td class="confluenceTd" colspan="1" width="">$150
+</td>
+<td class="confluenceTd" colspan="1" width="">Zomato
+</td>
+<td class="confluenceTd" colspan="1" width="">
+<a class="" href="https://hackerone.com/reports/953203">https://hackerone.com/reports/953203
+</a>
+</td>
+</tr>
+<tr>
+<td class="numberingColumn confluenceTd" colspan="1" width="">329
+</td>
+<td class="confluenceTd" colspan="1" width="">Missing authorization
+</td>
+<td class="confluenceTd" colspan="1" width="">Missing authorization checks lead to a user only allowed to do sales being able to record payments he was not supposed to
+</td>
+<td class="confluenceTd" colspan="1" width="">$250
+</td>
+<td class="confluenceTd" colspan="1" width="">Visma Public
+</td>
+<td class="confluenceTd" colspan="1" width="">
+<a class="" href="https://hackerone.com/reports/919008">https://hackerone.com/reports/919008
+</a>
+</td>
+</tr>
+<tr>
+<td class="numberingColumn confluenceTd" colspan="1" width="">330
+</td>
+<td class="confluenceTd" colspan="1" width="">SSRF
+</td>
+<td class="confluenceTd" colspan="1" width="">CodeQL query for detecting SSRF issues in Golang libraries and code
+</td>
+<td class="confluenceTd" colspan="1" width="">$1800
+</td>
+<td class="confluenceTd" colspan="1" width="">Github Security lab
+</td>
+<td class="confluenceTd" colspan="1" width="">
+<a class="" href="https://hackerone.com/reports/956296">https://hackerone.com/reports/956296
+</a>
+</td>
+</tr>
+<tr>
+<td class="numberingColumn confluenceTd" colspan="1" width="">331
+</td>
+<td class="confluenceTd" colspan="1" width="">LDAP Injection
+</td>
+<td class="confluenceTd" colspan="1" width="">CodeQL query for detecting LDAP injections in Java, supporting Java JNDI, UnboundID, SPring LDAP and Apache LDAP API
+</td>
+<td class="confluenceTd" colspan="1" width="">$2500
+</td>
+<td class="confluenceTd" colspan="1" width="">Github Security lab
+</td>
+<td class="confluenceTd" colspan="1" width="">
+<a class="" href="https://hackerone.com/reports/956295">https://hackerone.com/reports/956295
+</a>
+</td>
+</tr>
 
 </tbody>
 </table>
