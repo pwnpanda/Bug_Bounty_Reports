@@ -5683,6 +5683,336 @@
 </a>
 </td>
 </tr>
+<tr>
+<td class="numberingColumn confluenceTd" colspan="1" width="">332
+</td>
+<td class="confluenceTd" colspan="1" width="">XSS
+</td>
+<td class="confluenceTd" colspan="1" width="">Stored XSS through the chartbuilder in `one.newrelic.com`. Payload: `
+<span style="color: #333333;">SELECT `&ldquo;&gt;&lt;img src=x onerror=alert(document.domain)&gt; "' Style=position` FROM SyntheticCheck
+</span>`
+</td>
+<td class="confluenceTd" colspan="1" width="">$2500
+</td>
+<td class="confluenceTd" colspan="1" width="">New Relic
+</td>
+<td class="confluenceTd" colspan="1" width="">
+<a class="" href="https://hackerone.com/reports/634692">https://hackerone.com/reports/634692
+</a>
+</td>
+</tr>
+<tr>
+<td class="numberingColumn confluenceTd" colspan="1" width="">333
+</td>
+<td class="confluenceTd" colspan="1" width="">Information leak
+</td>
+<td class="confluenceTd" colspan="1" width="">Able to view full name of users who are not yet part of your account. This can be achieved by creating a note, viewing it and trying to share it with the invited account.
+</td>
+<td class="confluenceTd" colspan="1" width="">$750
+</td>
+<td class="confluenceTd" colspan="1" width="">New Relic
+</td>
+<td class="confluenceTd" colspan="1" width="">
+<a class="" href="https://hackerone.com/reports/476958">https://hackerone.com/reports/476958
+</a>
+</td>
+</tr>
+<tr>
+<td class="numberingColumn confluenceTd" colspan="1" width="">334
+</td>
+<td class="confluenceTd" colspan="1" width="">Privilege escalation
+</td>
+<td class="confluenceTd" colspan="1" width="">Restricted users are able to delete Key transaction tags through the GUI even though they should only have READ-access.
+</td>
+<td class="confluenceTd" colspan="1" width="">$750
+</td>
+<td class="confluenceTd" colspan="1" width="">New Relic
+</td>
+<td class="confluenceTd" colspan="1" width="">
+<a class="" href="https://hackerone.com/reports/638685">https://hackerone.com/reports/638685
+</a>
+</td>
+</tr>
+<tr>
+<td class="numberingColumn confluenceTd" colspan="1" width="">335
+</td>
+<td class="confluenceTd" colspan="1" width="">Privilege escalation
+</td>
+<td class="confluenceTd" colspan="1" width="">An unrestricted user is able to view the application token for a mobile app by directly visiting the `/deploy` endpoint for the app.
+</td>
+<td class="confluenceTd" colspan="1" width="">$500
+</td>
+<td class="confluenceTd" colspan="1" width="">New Relic
+</td>
+<td class="confluenceTd" colspan="1" width="">
+<a class="" href="https://hackerone.com/reports/479139">https://hackerone.com/reports/479139
+</a>
+</td>
+</tr>
+<tr>
+<td class="numberingColumn confluenceTd" colspan="1" width="">336
+</td>
+<td class="confluenceTd" colspan="1" width="">IDOR
+</td>
+<td class="confluenceTd" colspan="1" width="">Access to a subset of a victims Insights Dashboards through a GraphQL query with insufficient validation
+</td>
+<td class="confluenceTd" colspan="1" width="">$1500
+</td>
+<td class="confluenceTd" colspan="1" width="">New Relic
+</td>
+<td class="confluenceTd" colspan="1" width="">
+<a class="" href="https://hackerone.com/reports/765565">https://hackerone.com/reports/765565
+</a>
+</td>
+</tr>
+<tr>
+<td class="numberingColumn confluenceTd" colspan="1" width="">337
+</td>
+<td class="confluenceTd" colspan="1" width="">Logic bug
+</td>
+<td class="confluenceTd" colspan="1" width="">Ability to buy PRO subscriptions for reduced prices by tampering the pr. unit price
+</td>
+<td class="confluenceTd" colspan="1" width="">$203.5
+</td>
+<td class="confluenceTd" colspan="1" width="">New Relic
+</td>
+<td class="confluenceTd" colspan="1" width="">
+<a class="" href="https://hackerone.com/reports/783688">https://hackerone.com/reports/783688
+</a>
+</td>
+</tr>
+<tr>
+<td class="numberingColumn confluenceTd" colspan="1" width="">338
+</td>
+<td class="confluenceTd" colspan="1" width="">Improper access control
+</td>
+<td class="confluenceTd" colspan="1" width="">Restricted users are able to delete NerdStorage documents created/owned by any user on that account, through GraphQL query.
+</td>
+<td class="confluenceTd" colspan="1" width="">$600
+</td>
+<td class="confluenceTd" colspan="1" width="">New Relic
+</td>
+<td class="confluenceTd" colspan="1" width="">
+<a class="" href="https://hackerone.com/reports/766145">https://hackerone.com/reports/766145
+</a>
+</td>
+</tr>
+<tr>
+<td class="numberingColumn confluenceTd" colspan="1" width="">339
+</td>
+<td class="confluenceTd" colspan="1" width="">Improper access control
+</td>
+<td class="confluenceTd" colspan="1" width="">A restricted user was able to update the Aodex target for an application by abusing a GraphQL mutation without proper validation and authorization
+</td>
+<td class="confluenceTd" colspan="1" width="">$626
+</td>
+<td class="confluenceTd" colspan="1" width="">New Relic
+</td>
+<td class="confluenceTd" colspan="1" width="">
+<a class="" href="https://hackerone.com/reports/776449">https://hackerone.com/reports/776449
+</a>
+</td>
+</tr>
+<tr>
+<td class="numberingColumn confluenceTd" colspan="1" width="">340
+</td>
+<td class="confluenceTd" colspan="1" width="">Violation of secure design principles
+</td>
+<td class="confluenceTd" colspan="1" width="">It was not possible to delete API keys in the application, even though the GUI said it was possible and the action succeeded. This was true even for users with an Admin/Owner role.
+</td>
+<td class="confluenceTd" colspan="1" width="">$500
+</td>
+<td class="confluenceTd" colspan="1" width="">New Relic
+</td>
+<td class="confluenceTd" colspan="1" width="">
+<a class="" href="https://hackerone.com/reports/782703">https://hackerone.com/reports/782703
+</a>
+</td>
+</tr>
+<tr>
+<td class="numberingColumn confluenceTd" colspan="1" width="">341
+</td>
+<td class="confluenceTd" colspan="1" width="">Code injection
+</td>
+<td class="confluenceTd" colspan="1" width="">By abusing a CSRF vulnerability in the admin panel, the reporters were able to achieve stored XSS. Then, using the stored XSS vulnerability, they managed to escalate the vulnerability to RCE. The attack required Social Engineering of a Wordpress Admin (to click the initial link) to be successful
+</td>
+<td class="confluenceTd" colspan="1" width="">$506
+</td>
+<td class="confluenceTd" colspan="1" width="">New Relic
+</td>
+<td class="confluenceTd" colspan="1" width="">
+<a class="" href="https://hackerone.com/reports/941421">https://hackerone.com/reports/941421
+</a>
+</td>
+</tr>
+<tr>
+<td class="numberingColumn confluenceTd" colspan="1" width="">342
+</td>
+<td class="confluenceTd" colspan="1" width="">Improper access control
+</td>
+<td class="confluenceTd" colspan="1" width="">A test endpoint for Synthetic monitors was found by the reporter. It did not validate permissions of the user, causing low privileged users to be able to create monitors using Secure Credentials
+</td>
+<td class="confluenceTd" colspan="1" width="">$500
+</td>
+<td class="confluenceTd" colspan="1" width="">New Relic
+</td>
+<td class="confluenceTd" colspan="1" width="">
+<a class="" href="https://hackerone.com/reports/788499">https://hackerone.com/reports/788499
+</a>
+</td>
+</tr>
+<tr>
+<td class="numberingColumn confluenceTd" colspan="1" width="">343
+</td>
+<td class="confluenceTd" colspan="1" width="">IDOR
+</td>
+<td class="confluenceTd" colspan="1" width="">The reporter found a way to link an account with any Partnership as long as the ID was known. It was resolved by adding proper validation.
+</td>
+<td class="confluenceTd" colspan="1" width="">$695
+</td>
+<td class="confluenceTd" colspan="1" width="">New Relic
+</td>
+<td class="confluenceTd" colspan="1" width="">
+<a class="" href="https://hackerone.com/reports/786109">https://hackerone.com/reports/786109
+</a>
+</td>
+</tr>
+<tr>
+<td class="numberingColumn confluenceTd" colspan="1" width="">344
+</td>
+<td class="confluenceTd" colspan="1" width="">XSS
+</td>
+<td class="confluenceTd" colspan="1" width="">Stored XSS in the Synthetics private locations list. Both the Label and Description fields were vulnerable. PoC: `
+<span style="color: #333333;">&lt;/script&gt;&lt;script&gt;alert(document.domain)&lt;/script&gt;
+</span>`
+</td>
+<td class="confluenceTd" colspan="1" width="">$2500
+</td>
+<td class="confluenceTd" colspan="1" width="">New Relic
+</td>
+<td class="confluenceTd" colspan="1" width="">
+<a class="" href="https://hackerone.com/reports/680240">https://hackerone.com/reports/680240
+</a>
+</td>
+</tr>
+<tr>
+<td class="numberingColumn confluenceTd" colspan="1" width="">345
+</td>
+<td class="confluenceTd" colspan="1" width="">Improper access control
+</td>
+<td class="confluenceTd" colspan="1" width="">Restricted users are able to create, edit and remove tags from the NerdGraph entities.
+</td>
+<td class="confluenceTd" colspan="1" width="">$750
+</td>
+<td class="confluenceTd" colspan="1" width="">New Relic
+</td>
+<td class="confluenceTd" colspan="1" width="">
+<a class="" href="https://hackerone.com/reports/757957">https://hackerone.com/reports/757957
+</a>
+</td>
+</tr>
+<tr>
+<td class="numberingColumn confluenceTd" colspan="1" width="">346
+</td>
+<td class="confluenceTd" colspan="1" width="">XSS
+</td>
+<td class="confluenceTd" colspan="1" width="">Stored XSS in the "Position" field when applying for "Support/Moderator" jobs at recruit.innogames.de
+</td>
+<td class="confluenceTd" colspan="1" width="">$500
+</td>
+<td class="confluenceTd" colspan="1" width="">Innogames
+</td>
+<td class="confluenceTd" colspan="1" width="">
+<a class="" href="https://hackerone.com/reports/917250">https://hackerone.com/reports/917250
+</a>
+</td>
+</tr>
+<tr>
+<td class="numberingColumn confluenceTd" colspan="1" width="">347
+</td>
+<td class="confluenceTd" colspan="1" width="">IDOR
+</td>
+<td class="confluenceTd" colspan="1" width="">An endpoint for testing Synthetics monitors without proper validation allowed monitors from other accounts to run on your account, given that they knew the monitors ID (on victims account)
+</td>
+<td class="confluenceTd" colspan="1" width="">$2500
+</td>
+<td class="confluenceTd" colspan="1" width="">New Relic
+</td>
+<td class="confluenceTd" colspan="1" width="">
+<a class="" href="https://hackerone.com/reports/787886">https://hackerone.com/reports/787886
+</a>
+</td>
+</tr>
+<tr>
+<td class="numberingColumn confluenceTd" colspan="1" width="">348
+</td>
+<td class="confluenceTd" colspan="1" width="">XSS
+</td>
+<td class="confluenceTd" colspan="1" width="">Stored XSS across accounts through the embedded charts page. The vulnerable field is `chart_title` and the PoC is:&nbsp;`
+<span style="color: #333333;">&lt;/script&gt;&lt;script&gt;alert(document.domain)&lt;/script&gt;
+</span>`. Multiple bypasses was also found for this issue
+</td>
+<td class="confluenceTd" colspan="1" width="">$3625
+</td>
+<td class="confluenceTd" colspan="1" width="">New Relic
+</td>
+<td class="confluenceTd" colspan="1" width="">
+<a class="" href="https://hackerone.com/reports/709883">https://hackerone.com/reports/709883
+</a>
+</td>
+</tr>
+<tr>
+<td class="numberingColumn confluenceTd" colspan="1" width="">349
+</td>
+<td class="confluenceTd" colspan="1" width="">XSS
+</td>
+<td class="confluenceTd" colspan="1" width="">Stored XSS in the transactionName field of the Beta map functionality. PoC is a simple `
+<span style="color: #333333;">"-alert(document.domain)-"
+</span>`
+</td>
+<td class="confluenceTd" colspan="1" width="">$2500
+</td>
+<td class="confluenceTd" colspan="1" width="">New Relic
+</td>
+<td class="confluenceTd" colspan="1" width="">
+<a class="" href="https://hackerone.com/reports/667770">https://hackerone.com/reports/667770
+</a>
+</td>
+</tr>
+<tr>
+<td class="numberingColumn confluenceTd" colspan="1" width="">350
+</td>
+<td class="confluenceTd" colspan="1" width="">XSS
+</td>
+<td class="confluenceTd" colspan="1" width="">Cross account stored XSS by injecting the payload into a chart, when it is displayed inside a note. The exploit abuses the `href` attribute by using a `
+<span style="color: #333333;">javascript:alert()"
+</span>` payload. This XSS requires no user interaction.
+</td>
+<td class="confluenceTd" colspan="1" width="">$4250
+</td>
+<td class="confluenceTd" colspan="1" width="">New Relic
+</td>
+<td class="confluenceTd" colspan="1" width="">
+<a class="" href="https://hackerone.com/reports/507132">https://hackerone.com/reports/507132
+</a>
+</td>
+</tr>
+<tr>
+<td class="numberingColumn confluenceTd" colspan="1" width="">351
+</td>
+<td class="confluenceTd" colspan="1" width="">Improper access control
+</td>
+<td class="confluenceTd" colspan="1" width="">There was a misconfiguration in CORS-policy where all assets trusted the domain `nr3.nr-assets.net` where users can upload arbitrary content. (For example Nerdlet artifacts) This allows an attacker to upload malicious files of arbitrary types and execute arbitrary actions on behalf of the victim in various ways due to the incorrect configuration. Valid fixes are either to move user content to another sandbox domain or to amend the CORS policy.
+</td>
+<td class="confluenceTd" colspan="1" width="">$3125
+</td>
+<td class="confluenceTd" colspan="1" width="">New Relic
+</td>
+<td class="confluenceTd" colspan="1" width="">
+<a class="" href="https://hackerone.com/reports/751699">https://hackerone.com/reports/751699
+</a>
+</td>
+</tr>
 
 </tbody>
 </table>
