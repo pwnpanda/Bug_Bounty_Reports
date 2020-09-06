@@ -6013,6 +6013,1045 @@
 </a>
 </td>
 </tr>
+<tr>
+<td class="numberingColumn confluenceTd">352
+</td>
+<td class="confluenceTd" colspan="1">Information disclosure
+</td>
+<td class="confluenceTd" colspan="1">CORS misconfiguration allows requests from sandbox containing user apps, leading to potential disclosure of nerdpacks, nerdlets, and launcher ID's, and also source code of the victims app.
+</td>
+<td class="confluenceTd" colspan="1">$625
+</td>
+<td class="confluenceTd" colspan="1">New Relic
+</td>
+<td class="confluenceTd" colspan="1">
+<a href="https://hackerone.com/reports/746786">https://hackerone.com/reports/746786
+</a>
+</td>
+</tr>
+<tr>
+<td class="numberingColumn confluenceTd">353
+</td>
+<td class="confluenceTd" colspan="1">XSS
+</td>
+<td class="confluenceTd" colspan="1">Stored XSS in admin interface when creating a new alert. By formatting the url as: `
+<span style="color: #000000;">user:
+</span>
+<a style="text-decoration: none;" href="mailto:password@domain.com">password@domain.com
+</a>` the server accepts the payload, which is:
+<br />`
+<span style="color: #333333;">javascript:fetch("
+<a>https://rpm.newrelic.com/user_management/accounts/{ACCOUNT_ID}/update_primary_admin?value={ATTACKER_ID}",{method:"PUT",headers:{"X-Requested-With":"XMLHttpRequest
+</a>"}}).then(function(_){alert("you_have_lost_your_ownership");close()})//@
+<a href="http://asd.com">asd.com
+</a>
+</span>`
+</td>
+<td class="confluenceTd" colspan="1">$1337
+</td>
+<td class="confluenceTd" colspan="1">New Relic
+</td>
+<td class="confluenceTd" colspan="1">
+<a href="https://hackerone.com/reports/605845">https://hackerone.com/reports/605845
+</a>
+</td>
+</tr>
+<tr>
+<td class="numberingColumn confluenceTd">354
+</td>
+<td class="confluenceTd" colspan="1">Memory Corruption
+</td>
+<td class="confluenceTd" colspan="1">Missing best practices like having ASLR (Address Space Layout Randomization), DEP (Data Execution Prevention) and CFG (Control Flow Guard) enabled is lacking
+</td>
+<td class="confluenceTd" colspan="1">$50
+</td>
+<td class="confluenceTd" colspan="1">Nextcloud
+</td>
+<td class="confluenceTd" colspan="1">
+<a href="https://hackerone.com/reports/380102">https://hackerone.com/reports/380102
+</a>
+</td>
+</tr>
+<tr>
+<td class="numberingColumn confluenceTd">355
+</td>
+<td class="confluenceTd" colspan="1">DoS
+</td>
+<td class="confluenceTd" colspan="1">Denial of Service by poisoning the cache with invalid CORS Header, due to an endpoint echoing back and setting the CORS `Allow-Origin`Header to the supplied "origin" value.
+</td>
+<td class="confluenceTd" colspan="1">$200
+</td>
+<td class="confluenceTd" colspan="1">Automattic
+</td>
+<td class="confluenceTd" colspan="1">
+<a href="https://hackerone.com/reports/921704">https://hackerone.com/reports/921704
+</a>
+</td>
+</tr>
+<tr>
+<td class="numberingColumn confluenceTd">356
+</td>
+<td class="confluenceTd" colspan="1">XSS
+</td>
+<td class="confluenceTd" colspan="1">When connecting to an invalid website, it launches a pop-up which can contain attacker-controlled content. By using file-scheme, for example, you can trick users into launching arbitrary files on the local machine
+</td>
+<td class="confluenceTd" colspan="1">$100
+</td>
+<td class="confluenceTd" colspan="1">Nextcloud
+</td>
+<td class="confluenceTd" colspan="1">
+<a href="https://hackerone.com/reports/685552">https://hackerone.com/reports/685552
+</a>
+</td>
+</tr>
+<tr>
+<td class="numberingColumn confluenceTd">357
+</td>
+<td class="confluenceTd" colspan="1">Path Traversal
+</td>
+<td class="confluenceTd" colspan="1">The linux client is vulnerable to an attack where an administrator can inject path traversal payloads into filenames (../) in order to write files to arbitrary locations within the control of the nextcloud app, on the victims machine. It only allows for creating new files, not modify existing ones, and needs to be continously exploited to have effect.&nbsp;
+</td>
+<td class="confluenceTd" colspan="1">$250
+</td>
+<td class="confluenceTd" colspan="1">Nextcloud
+</td>
+<td class="confluenceTd" colspan="1">
+<a href="https://hackerone.com/reports/590319">https://hackerone.com/reports/590319
+</a>
+</td>
+</tr>
+<tr>
+<td class="numberingColumn confluenceTd">358
+</td>
+<td class="confluenceTd" colspan="1">SSRF
+</td>
+<td class="confluenceTd" colspan="1">SSRF in PlantUML staging server, due to accepting the&nbsp;`!include` function.&nbsp;
+</td>
+<td class="confluenceTd" colspan="1">$100
+</td>
+<td class="confluenceTd" colspan="1">GitLab
+</td>
+<td class="confluenceTd" colspan="1">
+<a href="https://hackerone.com/reports/689245">https://hackerone.com/reports/689245
+</a>
+</td>
+</tr>
+<tr>
+<td class="numberingColumn confluenceTd">359
+</td>
+<td class="confluenceTd" colspan="1">XSS
+</td>
+<td class="confluenceTd" colspan="1">Stored XSS due to improper filtering of &lt;a&gt; attributes after admin has edited them.
+</td>
+<td class="confluenceTd" colspan="1">$650
+</td>
+<td class="confluenceTd" colspan="1">WordPress
+</td>
+<td class="confluenceTd" colspan="1">
+<a href="https://hackerone.com/reports/633231">https://hackerone.com/reports/633231
+</a>
+</td>
+</tr>
+<tr>
+<td class="numberingColumn confluenceTd">360
+</td>
+<td class="confluenceTd" colspan="1">XSS
+</td>
+<td class="confluenceTd" colspan="1">Stored XSS due to improper filtering of &lt;a&gt; attributes after admin has edited them. Different case from #359
+</td>
+<td class="confluenceTd" colspan="1">$650
+</td>
+<td class="confluenceTd" colspan="1">WordPress
+</td>
+<td class="confluenceTd" colspan="1">
+<a href="https://hackerone.com/reports/497724">https://hackerone.com/reports/497724
+</a>
+</td>
+</tr>
+<tr>
+<td class="numberingColumn confluenceTd">361
+</td>
+<td class="confluenceTd" colspan="1">XSS
+</td>
+<td class="confluenceTd" colspan="1">Stored XSS in First and Last Name field for "Staff" account
+</td>
+<td class="confluenceTd" colspan="1">$3000
+</td>
+<td class="confluenceTd" colspan="1">Shopify
+</td>
+<td class="confluenceTd" colspan="1">
+<a href="https://hackerone.com/reports/948929">https://hackerone.com/reports/948929
+</a>
+</td>
+</tr>
+<tr>
+<td class="numberingColumn confluenceTd">362
+</td>
+<td class="confluenceTd" colspan="1">Privilege Escalation
+</td>
+<td class="confluenceTd" colspan="1">An attacker can register an account with an email, get permissions and then be deleted. After being deleted, by accessing&nbsp; `accounts.shopify.com` with the now deleted account, you still have access.
+</td>
+<td class="confluenceTd" colspan="1">$1000
+</td>
+<td class="confluenceTd" colspan="1">Shopify
+</td>
+<td class="confluenceTd" colspan="1">
+<a href="https://hackerone.com/reports/870001">https://hackerone.com/reports/870001
+</a>
+</td>
+</tr>
+<tr>
+<td class="numberingColumn confluenceTd">363
+</td>
+<td class="confluenceTd" colspan="1">Information disclosure
+</td>
+<td class="confluenceTd" colspan="1">A bug in graphql access controlled allowed an attacker with "customer" permissions to leak additional data they should not have access to, from orders.
+</td>
+<td class="confluenceTd" colspan="1">$1500
+</td>
+<td class="confluenceTd" colspan="1">Shopify
+</td>
+<td class="confluenceTd" colspan="1">
+<a href="https://hackerone.com/reports/882412">https://hackerone.com/reports/882412
+</a>
+</td>
+</tr>
+<tr>
+<td class="numberingColumn confluenceTd">364
+</td>
+<td class="confluenceTd" colspan="1">Information disclosure
+</td>
+<td class="confluenceTd" colspan="1">By first getting an API key, then querying for specific data, staff members can access data they are not supposed to have access to.
+</td>
+<td class="confluenceTd" colspan="1">$1000
+</td>
+<td class="confluenceTd" colspan="1">Shopify
+</td>
+<td class="confluenceTd" colspan="1">
+<a href="https://hackerone.com/reports/901775">https://hackerone.com/reports/901775
+</a>
+</td>
+</tr>
+<tr>
+<td class="numberingColumn confluenceTd">365
+</td>
+<td class="confluenceTd" colspan="1">Information disclosure
+</td>
+<td class="confluenceTd" colspan="1">Users without any permission can access certain store information through GraphQL query.
+</td>
+<td class="confluenceTd" colspan="1">$500
+</td>
+<td class="confluenceTd" colspan="1">Shopify
+</td>
+<td class="confluenceTd" colspan="1">
+<a href="https://hackerone.com/reports/409973">https://hackerone.com/reports/409973
+</a>
+</td>
+</tr>
+<tr>
+<td class="numberingColumn confluenceTd">366
+</td>
+<td class="confluenceTd" colspan="1">XSS
+</td>
+<td class="confluenceTd" colspan="1">Reflected XSS through the `skuNo` &amp; `skuImgUrl` parameters at `
+<a style="text-decoration: none;" title="https://www.istarbucks.co.kr/app/getGiftStock.do" href="https://hackerone.com/redirect?signature=1b7adc9c4ae5cae799de25befbbb584757e91740&amp;url=https%3A%2F%2Fwww.istarbucks.co.kr%2Fapp%2FgetGiftStock.do">
+<span>https://www.istarbucks.co.kr/app/getGiftStock.do
+</span>
+</a>`
+</td>
+<td class="confluenceTd" colspan="1">$250
+</td>
+<td class="confluenceTd" colspan="1">Starbucks
+</td>
+<td class="confluenceTd" colspan="1">
+<a href="https://hackerone.com/reports/768345">https://hackerone.com/reports/768345
+</a>
+</td>
+</tr>
+<tr>
+<td class="numberingColumn confluenceTd">367
+</td>
+<td class="confluenceTd" colspan="1">Improper access control
+</td>
+<td class="confluenceTd" colspan="1">Password reset link can be used to reset password multiple times.
+</td>
+<td class="confluenceTd" colspan="1">$500
+</td>
+<td class="confluenceTd" colspan="1">Shopify
+</td>
+<td class="confluenceTd" colspan="1">
+<a href="https://hackerone.com/reports/898841">https://hackerone.com/reports/898841
+</a>
+</td>
+</tr>
+<tr>
+<td class="numberingColumn confluenceTd">368
+</td>
+<td class="confluenceTd" colspan="1">IDOR
+</td>
+<td class="confluenceTd" colspan="1">The last 4 digits of a registered credit card could be obtained through error messages on the `/profile_payment/save`endpoint by abusing an IDOR
+</td>
+<td class="confluenceTd" colspan="1">$500
+</td>
+<td class="confluenceTd" colspan="1">Yelp
+</td>
+<td class="confluenceTd" colspan="1">
+<a href="https://hackerone.com/reports/361984">https://hackerone.com/reports/361984
+</a>
+</td>
+</tr>
+<tr>
+<td class="numberingColumn confluenceTd">369
+</td>
+<td class="confluenceTd" colspan="1">IDOR
+</td>
+<td class="confluenceTd" colspan="1">An IDOR allowed an attacker to order food on GrubHub by using someone elses credit card on the `
+<span style="color: #333333;">/checkout/transaction_platform
+</span>` endpoint.
+</td>
+<td class="confluenceTd" colspan="1">$2500
+</td>
+<td class="confluenceTd" colspan="1">Yelp
+</td>
+<td class="confluenceTd" colspan="1">
+<a href="https://hackerone.com/reports/391092">https://hackerone.com/reports/391092
+</a>
+</td>
+</tr>
+<tr>
+<td class="numberingColumn confluenceTd">370
+</td>
+<td class="confluenceTd" colspan="1">IDOR
+</td>
+<td class="confluenceTd" colspan="1">An IDOR on the `/rewards/signup` endpoint allowed an attacker to associate a random credit card to their account. While it could not be used. it allowed for viewing the transaction history and cash back amounts received
+</td>
+<td class="confluenceTd" colspan="1">$2000
+</td>
+<td class="confluenceTd" colspan="1">Yelp
+</td>
+<td class="confluenceTd" colspan="1">
+<a href="https://hackerone.com/reports/358143">https://hackerone.com/reports/358143
+</a>
+</td>
+</tr>
+<tr>
+<td class="numberingColumn confluenceTd">371
+</td>
+<td class="confluenceTd" colspan="1">Stack overflow
+</td>
+<td class="confluenceTd" colspan="1">Half Life 1 allows taking arguments from command-line to launch a mod/specific game. This is done through `-game &lt;arg&gt;`. The argument is copied using strcopy resulting in an overflow being possible.
+</td>
+<td class="confluenceTd" colspan="1">$1150
+</td>
+<td class="confluenceTd" colspan="1">Valve
+</td>
+<td class="confluenceTd" colspan="1">
+<a href="https://hackerone.com/reports/832750">https://hackerone.com/reports/832750
+</a>
+</td>
+</tr>
+<tr>
+<td class="numberingColumn confluenceTd">372
+</td>
+<td class="confluenceTd" colspan="1">Buffer Overflow
+</td>
+<td class="confluenceTd" colspan="1">By loading a malicious map-file (.bsp) an attacker can achieve RCE on any victim, if they load the map. This works on any GoldSrc game
+</td>
+<td class="confluenceTd" colspan="1">$450
+</td>
+<td class="confluenceTd" colspan="1">Valve
+</td>
+<td class="confluenceTd" colspan="1">
+<a href="https://hackerone.com/reports/763403">https://hackerone.com/reports/763403
+</a>
+</td>
+</tr>
+<tr>
+<td class="numberingColumn confluenceTd">373
+</td>
+<td class="confluenceTd" colspan="1">Buffer Overflow
+</td>
+<td class="confluenceTd" colspan="1">The spk console command has no length check before copying it into a stack based buffer, leading to being able to achieve RCE by having a victim load a malicious .cfg file.
+</td>
+<td class="confluenceTd" colspan="1">$350
+</td>
+<td class="confluenceTd" colspan="1">Valve
+</td>
+<td class="confluenceTd" colspan="1">
+<a href="https://hackerone.com/reports/769014">https://hackerone.com/reports/769014
+</a>
+</td>
+</tr>
+<tr>
+<td class="numberingColumn confluenceTd">374
+</td>
+<td class="confluenceTd" colspan="1">IDOR
+</td>
+<td class="confluenceTd" colspan="1">An IDOR when creating shipping labels allows an attacker to request print labels (and I assume see the information related to the order) for stores he does not have access to.
+</td>
+<td class="confluenceTd" colspan="1">$1000
+</td>
+<td class="confluenceTd" colspan="1">Shopify
+</td>
+<td class="confluenceTd" colspan="1">
+<a href="https://hackerone.com/reports/884159">https://hackerone.com/reports/884159
+</a>
+</td>
+</tr>
+<tr>
+<td class="numberingColumn confluenceTd">375
+</td>
+<td class="confluenceTd" colspan="1">Improper authentication
+</td>
+<td class="confluenceTd" colspan="1">The `getLoginStatus` call in Digits allows an attacker to retrieve OAuth Credentials for any account, due to improperly verifying domains by utilizing the referer header. If this header was empty, the application considered the request valid, which was the issue.
+</td>
+<td class="confluenceTd" colspan="1">$5040
+</td>
+<td class="confluenceTd" colspan="1">Twitter
+</td>
+<td class="confluenceTd" colspan="1">
+<a href="https://hackerone.com/reports/168116">https://hackerone.com/reports/168116
+</a>
+</td>
+</tr>
+<tr>
+<td class="numberingColumn confluenceTd">376
+</td>
+<td class="confluenceTd" colspan="1">Information disclosure
+</td>
+<td class="confluenceTd" colspan="1">CodeQL query to detect logging of potentially sensitive information in JS based applications
+</td>
+<td class="confluenceTd" colspan="1">$1800
+</td>
+<td class="confluenceTd" colspan="1">Github Security Lab
+</td>
+<td class="confluenceTd" colspan="1">
+<a href="https://hackerone.com/reports/963816">https://hackerone.com/reports/963816
+</a>
+</td>
+</tr>
+<tr>
+<td class="numberingColumn confluenceTd">377
+</td>
+<td class="confluenceTd" colspan="1">Information disclosure
+</td>
+<td class="confluenceTd" colspan="1">CodeQL query to detect basic authentication over HTTP in java.net and Apache HttpClient libraries. This is vulnerable due to basic auth only using base64 encoding and being easily reversible.&nbsp;
+</td>
+<td class="confluenceTd" colspan="1">$2300
+</td>
+<td class="confluenceTd" colspan="1">Github Security Lab
+</td>
+<td class="confluenceTd" colspan="1">
+<a href="https://hackerone.com/reports/963815">https://hackerone.com/reports/963815
+</a>
+</td>
+</tr>
+<tr>
+<td class="numberingColumn confluenceTd">378
+</td>
+<td class="confluenceTd" colspan="1">DoS
+</td>
+<td class="confluenceTd" colspan="1">Lodash V.4.17.15 was vulnerable to prototype pollution, allowing for potential DoS.
+</td>
+<td class="confluenceTd" colspan="1">$250
+</td>
+<td class="confluenceTd" colspan="1">NodeJS 3rd party modules
+</td>
+<td class="confluenceTd" colspan="1">
+<a href="https://hackerone.com/reports/864701">https://hackerone.com/reports/864701
+</a>
+</td>
+</tr>
+<tr>
+<td class="numberingColumn confluenceTd">379
+</td>
+<td class="confluenceTd" colspan="1">Privacy Violation
+</td>
+<td class="confluenceTd" colspan="1">Clickjacking was possible during the payment process, leading to an attacker being able to trick the victim into paying for items using their stored credit card.
+</td>
+<td class="confluenceTd" colspan="1">$400
+</td>
+<td class="confluenceTd" colspan="1">Yelp
+</td>
+<td class="confluenceTd" colspan="1">
+<a href="https://hackerone.com/reports/391385">https://hackerone.com/reports/391385
+</a>
+</td>
+</tr>
+<tr>
+<td class="numberingColumn confluenceTd">380
+</td>
+<td class="confluenceTd" colspan="1">
+<span style="color: #000000;">UI Redressing (Clickjacking)
+</span>
+</td>
+<td class="confluenceTd" colspan="1">Multiple endpoints were vulnerable to clickjacking.
+</td>
+<td class="confluenceTd" colspan="1">$500
+</td>
+<td class="confluenceTd" colspan="1">Yelp
+</td>
+<td class="confluenceTd" colspan="1">
+<a href="https://hackerone.com/reports/305128">https://hackerone.com/reports/305128
+</a>
+</td>
+</tr>
+<tr>
+<td class="numberingColumn confluenceTd">381
+</td>
+<td class="confluenceTd" colspan="1">
+<span style="color: #000000;">UI Redressing (Clickjacking)
+</span>
+</td>
+<td class="confluenceTd" colspan="1">Clickjacking was possible on the `/reservations` endpoint, possibly allowing an attacker to leak information of a victim or incurring monetary loss for the victim
+</td>
+<td class="confluenceTd" colspan="1">$500
+</td>
+<td class="confluenceTd" colspan="1">Yelp
+</td>
+<td class="confluenceTd" colspan="1">
+<a href="https://hackerone.com/reports/355859">https://hackerone.com/reports/355859
+</a>
+</td>
+</tr>
+<tr>
+<td class="numberingColumn confluenceTd">382
+</td>
+<td class="confluenceTd" colspan="1">Information disclosure
+</td>
+<td class="confluenceTd" colspan="1">It is possible to disclose all details about all pentesters invited to a test, regardless if they accepted or not. This allows leaking sensitive information.
+</td>
+<td class="confluenceTd" colspan="1">$500
+</td>
+<td class="confluenceTd" colspan="1">HackerOne
+</td>
+<td class="confluenceTd" colspan="1">
+<a href="https://hackerone.com/reports/958374">https://hackerone.com/reports/958374
+</a>
+</td>
+</tr>
+<tr>
+<td class="numberingColumn confluenceTd">383
+</td>
+<td class="confluenceTd" colspan="1">XSS
+</td>
+<td class="confluenceTd" colspan="1">Stored XSS through the dashboard builder within New Relic One.&nbsp;
+</td>
+<td class="confluenceTd" colspan="1">$2500
+</td>
+<td class="confluenceTd" colspan="1">New Relic
+</td>
+<td class="confluenceTd" colspan="1">
+<a href="https://hackerone.com/reports/626082">https://hackerone.com/reports/626082
+</a>
+</td>
+</tr>
+<tr>
+<td class="numberingColumn confluenceTd">384
+</td>
+<td class="confluenceTd" colspan="1">Privilege Escalation
+</td>
+<td class="confluenceTd" colspan="1">Synthetics did not have the matching permissions compared to other functionality, allowing for users to have higher privileges than intended.
+</td>
+<td class="confluenceTd" colspan="1">$750
+</td>
+<td class="confluenceTd" colspan="1">New Relic
+</td>
+<td class="confluenceTd" colspan="1">
+<a href="https://hackerone.com/reports/387290">https://hackerone.com/reports/387290
+</a>
+</td>
+</tr>
+<tr>
+<td class="numberingColumn confluenceTd">385
+</td>
+<td class="confluenceTd" colspan="1">Privilege Escalation
+</td>
+<td class="confluenceTd" colspan="1">Due to changing to use Zuora for managing customer subscriptions, members who do not have such access through the New Relic platform, can access the information through the Zoura API.
+</td>
+<td class="confluenceTd" colspan="1">$900
+</td>
+<td class="confluenceTd" colspan="1">New Relic
+</td>
+<td class="confluenceTd" colspan="1">
+<a href="https://hackerone.com/reports/501672">https://hackerone.com/reports/501672
+</a>
+</td>
+</tr>
+<tr>
+<td class="numberingColumn confluenceTd">386
+</td>
+<td class="confluenceTd" colspan="1">XSS
+</td>
+<td class="confluenceTd" colspan="1">Stored XSS via role name in JSON chart, which was part of a prerelease UI. Payload was: `
+<span style="color: #333333;">/*\"&lt;sVg/oNloAd=alert(document.domain)//&gt;\x3e
+</span>`
+</td>
+<td class="confluenceTd" colspan="1">$2500
+</td>
+<td class="confluenceTd" colspan="1">New Relic
+</td>
+<td class="confluenceTd" colspan="1">
+<a href="https://hackerone.com/reports/520630">https://hackerone.com/reports/520630
+</a>
+</td>
+</tr>
+<tr>
+<td class="numberingColumn confluenceTd">387
+</td>
+<td class="confluenceTd" colspan="1">Improper authentication
+</td>
+<td class="confluenceTd" colspan="1">Restricted users were able to delete filter sets used by admin users in `
+<span style="color: #000000;">
+<span>&nbsp;
+</span>
+<a href="https://infrastructure.newrelic.com/accounts/{{ACC#}}/settings/filterSets">https://infrastructure.newrelic.com/accounts/{{ACC#}}/settings/filterSets
+</a>
+</span>`
+</td>
+<td class="confluenceTd" colspan="1">$250
+</td>
+<td class="confluenceTd" colspan="1">New Relic
+</td>
+<td class="confluenceTd" colspan="1">
+<a href="https://hackerone.com/reports/202501">https://hackerone.com/reports/202501
+</a>
+</td>
+</tr>
+<tr>
+<td class="numberingColumn confluenceTd">388
+</td>
+<td class="confluenceTd" colspan="1">Privilege escalation
+</td>
+<td class="confluenceTd" colspan="1">By being invited as a staff member and becoming a partner, then revoking said permission, the previous account still has access to the partner store (? Hard to understand from report)
+</td>
+<td class="confluenceTd" colspan="1">$1500
+</td>
+<td class="confluenceTd" colspan="1">Shopify
+</td>
+<td class="confluenceTd" colspan="1">
+<a href="https://hackerone.com/reports/911857">https://hackerone.com/reports/911857
+</a>
+</td>
+</tr>
+<tr>
+<td class="numberingColumn confluenceTd">389
+</td>
+<td class="confluenceTd" colspan="1">XSS
+</td>
+<td class="confluenceTd" colspan="1">It is possible to achieve stored XSS when creating a menu item. The XSS fires when you try to delete said item.
+</td>
+<td class="confluenceTd" colspan="1">$1000
+</td>
+<td class="confluenceTd" colspan="1">Shopify
+</td>
+<td class="confluenceTd" colspan="1">
+<a href="https://hackerone.com/reports/887879">https://hackerone.com/reports/887879
+</a>
+</td>
+</tr>
+<tr>
+<td class="numberingColumn confluenceTd">390
+</td>
+<td class="confluenceTd" colspan="1">Information disclosure
+</td>
+<td class="confluenceTd" colspan="1">Staff members with No Permission could not access data through web, but by using the Android application the member can access&nbsp;
+<span style="color: #000000;">Order Details via the `exchangeReceiptSend` call
+</span>
+</td>
+<td class="confluenceTd" colspan="1">$1000
+</td>
+<td class="confluenceTd" colspan="1">Shopify
+</td>
+<td class="confluenceTd" colspan="1">
+<a href="https://hackerone.com/reports/917875">https://hackerone.com/reports/917875
+</a>
+</td>
+</tr>
+<tr>
+<td class="numberingColumn confluenceTd">391
+</td>
+<td class="confluenceTd" colspan="1">Privilege escalation
+</td>
+<td class="confluenceTd" colspan="1">A malicious admin can create additional admin accounts without notifying / it being visible to other admins.
+</td>
+<td class="confluenceTd" colspan="1">$500
+</td>
+<td class="confluenceTd" colspan="1">Shopify
+</td>
+<td class="confluenceTd" colspan="1">
+<a href="https://hackerone.com/reports/962895">https://hackerone.com/reports/962895
+</a>
+</td>
+</tr>
+<tr>
+<td class="numberingColumn confluenceTd">392
+</td>
+<td class="confluenceTd" colspan="1">Path traversal
+</td>
+<td class="confluenceTd" colspan="1">It is possible to use path traversal in order to access arbitrary paths on the OAuth app as an anonymous user
+</td>
+<td class="confluenceTd" colspan="1">$500
+</td>
+<td class="confluenceTd" colspan="1">Shopify
+</td>
+<td class="confluenceTd" colspan="1">
+<a href="https://hackerone.com/reports/869888">https://hackerone.com/reports/869888
+</a>
+</td>
+</tr>
+<tr>
+<td class="numberingColumn confluenceTd">393
+</td>
+<td class="confluenceTd" colspan="1">Violation of secure design principles
+</td>
+<td class="confluenceTd" colspan="1">If you change country information in Account settings, hackerone does not send you a "Your profile was recently changed" notification email.
+</td>
+<td class="confluenceTd" colspan="1">$500
+</td>
+<td class="confluenceTd" colspan="1">Hackerone
+</td>
+<td class="confluenceTd" colspan="1">
+<a href="https://hackerone.com/reports/961841">https://hackerone.com/reports/961841
+</a>
+</td>
+</tr>
+<tr>
+<td class="numberingColumn confluenceTd">394
+</td>
+<td class="confluenceTd" colspan="1">Information disclosure
+</td>
+<td class="confluenceTd" colspan="1">By fetching a valid token from another store, it was possible to bypass the password-restriction on stores in preview mode.
+</td>
+<td class="confluenceTd" colspan="1">$1500
+</td>
+<td class="confluenceTd" colspan="1">Shopify
+</td>
+<td class="confluenceTd" colspan="1">
+<a href="https://hackerone.com/reports/961929">https://hackerone.com/reports/961929
+</a>
+</td>
+</tr>
+<tr>
+<td class="numberingColumn confluenceTd">395
+</td>
+<td class="confluenceTd" colspan="1">XSS
+</td>
+<td class="confluenceTd" colspan="1">By setting the name of the folder containing a broken theme to a XSS payload, XSS can be achieved. This requires installing an attacker-supplied theme or write-access to the file system.
+</td>
+<td class="confluenceTd" colspan="1">$300
+</td>
+<td class="confluenceTd" colspan="1">WordPress
+</td>
+<td class="confluenceTd" colspan="1">
+<a href="https://hackerone.com/reports/406289">https://hackerone.com/reports/406289
+</a>
+</td>
+</tr>
+<tr>
+<td class="numberingColumn confluenceTd">396
+</td>
+<td class="confluenceTd" colspan="1">XSS
+</td>
+<td class="confluenceTd" colspan="1">Self-xss on Timeline by using `javascript:` protocol
+</td>
+<td class="confluenceTd" colspan="1">$500
+</td>
+<td class="confluenceTd" colspan="1">Shopify
+</td>
+<td class="confluenceTd" colspan="1">
+<a href="https://hackerone.com/reports/854299">https://hackerone.com/reports/854299
+</a>
+</td>
+</tr>
+<tr>
+<td class="numberingColumn confluenceTd">397
+</td>
+<td class="confluenceTd" colspan="1">Improper access control
+</td>
+<td class="confluenceTd" colspan="1">Script Editor tokens do not expire and thus, scripts can still be edited and added if you have the token, even if the Script Editor application is uninstalled. The scripts can also no longer be seen or edited unless manually accessing/calling the API if the script is renamed to an empty character.
+</td>
+<td class="confluenceTd" colspan="1">$2000
+</td>
+<td class="confluenceTd" colspan="1">Shopify
+</td>
+<td class="confluenceTd" colspan="1">
+<a href="https://hackerone.com/reports/915940">https://hackerone.com/reports/915940
+</a>
+</td>
+</tr>
+<tr>
+<td class="numberingColumn confluenceTd">398
+</td>
+<td class="confluenceTd" colspan="1">Information disclosure
+</td>
+<td class="confluenceTd" colspan="1">Within the same company, it was possible to access data one should not be able to, when having the `Auditor` role.
+</td>
+<td class="confluenceTd" colspan="1">$100
+</td>
+<td class="confluenceTd" colspan="1">Visma Public
+</td>
+<td class="confluenceTd" colspan="1">
+<a href="https://hackerone.com/reports/959897">https://hackerone.com/reports/959897
+</a>
+</td>
+</tr>
+<tr>
+<td class="numberingColumn confluenceTd">399
+</td>
+<td class="confluenceTd" colspan="1">Privilege Escalation
+</td>
+<td class="confluenceTd" colspan="1">By navigating directly to the relevant endpoints instead of relying on the UI, and restricted user is able to create integrations with AWS, even though his role forbids this.
+</td>
+<td class="confluenceTd" colspan="1">$750
+</td>
+<td class="confluenceTd" colspan="1">New Relic
+</td>
+<td class="confluenceTd" colspan="1">
+<a href="https://hackerone.com/reports/255685">https://hackerone.com/reports/255685
+</a>
+</td>
+</tr>
+<tr>
+<td class="numberingColumn confluenceTd">400
+</td>
+<td class="confluenceTd" colspan="1">Privilege Escalation
+</td>
+<td class="confluenceTd" colspan="1">By logging in to New Relic Synthetics with no permissions, observing calls allows you to identify a call returning all data about the monitor's and permissions for the group.
+</td>
+<td class="confluenceTd" colspan="1">$750
+</td>
+<td class="confluenceTd" colspan="1">New Relic
+</td>
+<td class="confluenceTd" colspan="1">
+<a class="" href="https://hackerone.com/reports/320689">https://hackerone.com/reports/320689
+</a>
+</td>
+</tr>
+<tr>
+<td class="numberingColumn confluenceTd">401
+</td>
+<td class="confluenceTd" colspan="1">IDOR
+</td>
+<td class="confluenceTd" colspan="1">By adding a new user to your New Relic account as an admin, you are able to disclose their full name on the&nbsp;
+<span style="text-decoration: none;">`
+</span>
+<span style="text-decoration: none; text-align: left;">
+<a style="text-decoration: none; text-align: left;" title="https://alerts.newrelic.com/accounts/ACCOUNT_ID/channels" href="https://hackerone.com/redirect?signature=9f8ac05fe4145f5c43a35417d0482993f002874c&amp;url=https%3A%2F%2Falerts.newrelic.com%2Faccounts%2FACCOUNT_ID%2Fchannels" target="_blank" rel="nofollow noopener noreferrer">https://alerts.newrelic.com/accounts/ACCOUNT_ID/channels
+</a>`page
+</span>
+</td>
+<td class="confluenceTd" colspan="1">$1500
+</td>
+<td class="confluenceTd" colspan="1">New Relic
+</td>
+<td class="confluenceTd" colspan="1">
+<a class="" href="https://hackerone.com/reports/344309">https://hackerone.com/reports/344309
+</a>
+</td>
+</tr>
+<tr>
+<td class="numberingColumn confluenceTd">402
+</td>
+<td class="confluenceTd" colspan="1">IDOR
+</td>
+<td class="confluenceTd" colspan="1">When creating an account for a new user, the admin cannot see the name of the account holder. This vulnerability allowed an attacker to disclose such data through the API endpoint `
+<span style="color: #000000;">
+<span>&nbsp;
+</span>
+</span>
+<a style="text-decoration: none; text-align: left;" title="https://alerts.newrelic.com/internal_api/1/accounts/%7BYOURACCOUNTNUMBER%7D/users/" href="https://hackerone.com/redirect?signature=e8c45095ac25bb292666e6a259ec5072a0872691&amp;url=https%3A%2F%2Falerts.newrelic.com%2Finternal_api%2F1%2Faccounts%2F%257BYOURACCOUNTNUMBER%257D%2Fusers%2F" target="_blank" rel="nofollow noopener noreferrer">
+<span>https://alerts.newrelic.com/internal_api/1/accounts/YOURACCOUNTNUMBER/users/
+</span>
+</a>`
+</td>
+<td class="confluenceTd" colspan="1">$1500
+</td>
+<td class="confluenceTd" colspan="1">New Relic
+</td>
+<td class="confluenceTd" colspan="1">
+<a class="" href="https://hackerone.com/reports/332381">https://hackerone.com/reports/332381
+</a>
+</td>
+</tr>
+<tr>
+<td class="numberingColumn confluenceTd">403
+</td>
+<td class="confluenceTd" colspan="1">Improper access control
+</td>
+<td class="confluenceTd" colspan="1">If a permanent maintainer creates a mirror then removes it, any other project maintainer can create a mirror that is similar to the first one created. This is contrary to what documentations states and can allow an attacker to plant backdoors or push to a repository after being removed from the project.
+</td>
+<td class="confluenceTd" colspan="1">$3000
+</td>
+<td class="confluenceTd" colspan="1">GitLab
+</td>
+<td class="confluenceTd" colspan="1">
+<a class="" href="https://hackerone.com/reports/819821">https://hackerone.com/reports/819821
+</a>
+</td>
+</tr>
+<tr>
+<td class="numberingColumn confluenceTd">404
+</td>
+<td class="confluenceTd" colspan="1">IDOR
+</td>
+<td class="confluenceTd" colspan="1">
+<p>By creating an account on customers.gitlab.com, then linking it to the victims account by using their userId (it is sequential and easy to get), you will:
+</p>
+<ol>
+<li>Remove all subscriptions
+</li>
+<li>Get access to all future updates, including credit card registration!
+</li>
+<li>Attacker can use registered information
+</li>
+</ol>
+</td>
+<td class="confluenceTd" colspan="1">$3500
+</td>
+<td class="confluenceTd" colspan="1">GitLab
+</td>
+<td class="confluenceTd" colspan="1">
+<a class="" href="https://hackerone.com/reports/674195">https://hackerone.com/reports/674195
+</a>
+</td>
+</tr>
+<tr>
+<td class="numberingColumn confluenceTd">405
+</td>
+<td class="confluenceTd" colspan="1">Privilege Escalation
+</td>
+<td class="confluenceTd" colspan="1">If a gitlab admin uses the `impersonate` function, the admin cookie will be replaced with the user cookie and have a "Stop impersonating" button available to return to the admin account. This session shows up in the `sessions` overview of the user, so if the user switches to this session, he can click the "Stop impersonating"-button and get admin access.
+</td>
+<td class="confluenceTd" colspan="1">$10,000
+</td>
+<td class="confluenceTd" colspan="1">GitLab
+</td>
+<td class="confluenceTd" colspan="1">
+<a class="" href="https://hackerone.com/reports/493324">https://hackerone.com/reports/493324
+</a>
+</td>
+</tr>
+<tr>
+<td class="numberingColumn confluenceTd">406
+</td>
+<td class="confluenceTd" colspan="1">Logic bug
+</td>
+<td class="confluenceTd" colspan="1">An attacker was able to run arbitrary pipeline jobs as the victim. By creating a repository and a mirrored project with `trigger pipelines for mirror updates` enabled, and then inviting the victim as an owner, then deleting the original owner, the pipeline will execute in the context of the victim account.
+</td>
+<td class="confluenceTd" colspan="1">$12,000
+</td>
+<td class="confluenceTd" colspan="1">GitLab
+</td>
+<td class="confluenceTd" colspan="1">
+<a class="" href="https://hackerone.com/reports/894569">https://hackerone.com/reports/894569
+</a>
+</td>
+</tr>
+<tr>
+<td class="numberingColumn confluenceTd">407
+</td>
+<td class="confluenceTd" colspan="1">XSS
+</td>
+<td class="confluenceTd" colspan="1">Stored XSS in groups, by naming the group as an XSS payload - `
+<span style="color: #000000;">
+<span>&nbsp;
+</span>"&gt;&lt;img src=x onerror=prompt(123)&gt;
+</span>` - and clicking `New Project`
+</td>
+<td class="confluenceTd" colspan="1">$2500
+</td>
+<td class="confluenceTd" colspan="1">GitLab
+</td>
+<td class="confluenceTd" colspan="1">
+<a class="" href="https://hackerone.com/reports/647130">https://hackerone.com/reports/647130
+</a>
+</td>
+</tr>
+<tr>
+<td class="numberingColumn confluenceTd">408
+</td>
+<td class="confluenceTd" colspan="1">Improper access control
+</td>
+<td class="confluenceTd" colspan="1">The `jira_status` field has an issue with `sort_by` allowing an attacker to see if a report is using Jira or not.
+</td>
+<td class="confluenceTd" colspan="1">$550
+</td>
+<td class="confluenceTd" colspan="1">Hackerone
+</td>
+<td class="confluenceTd" colspan="1">
+<a class="" href="https://hackerone.com/reports/955286">https://hackerone.com/reports/955286
+</a>
+</td>
+</tr>
+<tr>
+<td class="numberingColumn confluenceTd">409
+</td>
+<td class="confluenceTd" colspan="1">XSS
+</td>
+<td class="confluenceTd" colspan="1">Stored XSS on `
+<span style="color: #333333;">
+<a href="http://eaccounting.stage.vismaonline.com">eaccounting.stage.vismaonline.com
+</a>
+</span>`
+</td>
+<td class="confluenceTd" colspan="1">$250
+</td>
+<td class="confluenceTd" colspan="1">Visma Public
+</td>
+<td class="confluenceTd" colspan="1">
+<a class="" href="https://hackerone.com/reports/897523">https://hackerone.com/reports/897523
+</a>
+</td>
+</tr>
+<tr>
+<td class="numberingColumn confluenceTd">410
+</td>
+<td class="confluenceTd" colspan="1">CSRF
+</td>
+<td class="confluenceTd" colspan="1">Due to disclosing part of the authenticity token used to generate csrf tokens. Using this, an attacker can generate valid CSRF tokens for any arbitrary route.
+</td>
+<td class="confluenceTd" colspan="1">$500
+</td>
+<td class="confluenceTd" colspan="1">Ruby on Rails
+</td>
+<td class="confluenceTd" colspan="1">
+<a class="" href="https://hackerone.com/reports/732415">https://hackerone.com/reports/732415
+</a>
+</td>
+</tr>
+<tr>
+<td class="numberingColumn confluenceTd">411
+</td>
+<td class="confluenceTd" colspan="1">Improper access control
+</td>
+<td class="confluenceTd" colspan="1">Ability to publish any theme for free, by extracting the ID of the paid theme, and then intercepting the update to a free theme and replacing that ID with the ID of the paid theme.
+</td>
+<td class="confluenceTd" colspan="1">$2000
+</td>
+<td class="confluenceTd" colspan="1">Shopify
+</td>
+<td class="confluenceTd" colspan="1">
+<a class="" href="https://hackerone.com/reports/927567">https://hackerone.com/reports/927567
+</a>
+</td>
+</tr>
+<tr>
+<td class="numberingColumn confluenceTd">412
+</td>
+<td class="confluenceTd" colspan="1">Improper access control
+</td>
+<td class="confluenceTd" colspan="1">Ability to publish any theme for free, by race condition when installing the theme. This is done by finding a paid theme and clicking the `Try theme` button. Then, while it is installing, issuing the PublishLegacy call for a free theme. Then intercept and modify the first GraphQL Query to ThemesProcessingLegacy where you replace the theme ID with the paid theme ID.
+</td>
+<td class="confluenceTd" colspan="1">$2000
+</td>
+<td class="confluenceTd" colspan="1">Shopify
+</td>
+<td class="confluenceTd" colspan="1">
+<a class="" href="https://hackerone.com/reports/953083">https://hackerone.com/reports/953083
+</a>
+</td>
+</tr>
 
 </tbody>
 </table>
