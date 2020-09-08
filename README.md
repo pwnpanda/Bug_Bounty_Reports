@@ -435,6 +435,7 @@ Open for contributions from others as well, so please send a pull request if you
 418 | Information disclosure | Config files were accessible for warofdragons.my.games, leaking database credentials and other information | $150 | Mail.ru | https://hackerone.com/reports/786609
 419 | CRLF injection | www.starbucks.com/email-prospectt was vulnerable to CRLF injection allowing for header injection (for example injecting CORS headers) or HTTP response splitting, which can be further exploited. | $250 | Starbucks | https://hackerone.com/reports/858650
 420 | XSS | It is possible to achieve stored XSS if an attacker can upload files using Active storage, by utilizing the proxy-functionality included in Ruby on Rails. | $500 | Ruby on Rails | https://hackerone.com/reports/949513
-414 | XSS | It was possible to achieve stored XSS in the Post title on Imgur. This was achieved using a standard `"><svg` payload. | $250 | Imgur | https://hackerone.com/reports/942859
-421 | Logic bug | Email bypass for shopify accounts that did not have Shopify IDs. This allowed an attacker to exploit a flaw in the flow, allowing for taking over these accounts without any verification. | $22,500 | Shopify | https://hackerone.com/reports/867513
-422 | Information leak | Anonymous access to a Sidekiq process dashboard was possible on shopper.sbermarket.ru | $500 | Mail.ru | https://hackerone.com/reports/951190
+421 | XSS | It was possible to achieve stored XSS in the Post title on Imgur. This was achieved using a standard `"><svg` payload. | $250 | Imgur | https://hackerone.com/reports/942859
+422 | Logic bug | Email bypass for shopify accounts that did not have Shopify IDs. This allowed an attacker to exploit a flaw in the flow, allowing for taking over these accounts without any verification. | $22,500 | Shopify | https://hackerone.com/reports/867513
+423 | Information leak | Anonymous access to a Sidekiq process dashboard was possible on shopper.sbermarket.ru | $500 | Mail.ru | https://hackerone.com/reports/951190
+424 | DoS | Browser-dependent DoS by injecting invalid link: `http://twitter.com:627732462` | $1120 | Twitter | https://hackerone.com/reports/903740
